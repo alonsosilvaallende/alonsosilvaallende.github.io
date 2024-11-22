@@ -1,0 +1,211 @@
+---
+title: "Publications"
+format: html
+---
+
+- "Large Language Models Playing Mixed Strategy Nash Equilibrium Games,"
+A. Silva,
+Proc. of the 11th International Conference on Network Games, Control and Optimization (Netgcoop), Lille, France, October 9-11, 2024.
+
+ 
+- "Aggregation Methods and Comparative Study in Time-to-Event
+Analysis Models,"
+C. Fernandez, C.S. Chen, P. Gaillard, A. Silva,
+International Journal of Data Science and Analytics,
+September 25, 2024.
+
+
+- "Predicting Network Hardware Faults through Layered Treatment of Alarms Logs,"
+A. Massaro, D. Kostadinov, A. Silva, A. Obeid Guzman, A. Aghasaryan,
+Entropy, vol. 25, issue 6, pp. 917, 2023.
+
+
+- "Experimental Comparison of Semi-parametric, Parametric, and Machine Learning Methods for Time-to-Event Analysis Through the IPEC Score,"
+C. Fernandez, C.S. Chen, P. Gaillard, A. Silva,
+Proc. of the 52èmes Journées de Statistiques de la Société Française de Statistique (SFdS), Nice, France, June 7-11, 2021.
+
+
+- "Experimental Comparison of Semi-parametric, Parametric, and Machine Learning Models for Time-to-Event Analysis Through the Concordance Index,"
+C. Fernandez, C.S. Chen, P. Gaillard, A. Silva,
+Proc. of the 52èmes Journées de Statistiques de la Société Française de Statistique (SFdS), Nice, France, May 25-29, 2020.
+
+
+- "Path Planning Problems with Side Observations --- When Colonels Play Hide-and-Seek,"
+D.Q. Vu, P. Loiseau, A. Silva, L. Tran-Thanh,
+Proc of the 34th AAAI Conference on Artificial Intelligence (AAAI), New York, NY, USA, February 7-12, 2020.
+
+
+- "Combinatorial Bandits for Sequential Learning in Colonel Blotto Games,"
+D.Q. Vu, P. Loiseau, A. Silva,
+Proc. of the 58th IEEE Conference on Decision and Control (CDC), Nice, France, December 11-13, 2019.
+
+
+- "Efficient Computation of Approximate Equilibria in Discrete Colonel Blotto Games,"
+D.Q. Vu, P. Loiseau, A. Silva,
+Proc. of the 27th International Joint Conference on Artificial Intelligence and the 23rd European Conference on Artificial Intelligence (IJCAI-ECAI), Stockholm, Sweden, July 13-19, 2018.
+
+
+- "A Simple and Efficient Algorithm to Compute Epsilon-Equilibria of Discrete Colonel Blotto Games,"
+D.Q. Vu, P. Loiseau, A. Silva,
+Proc. of the International Conference on Autonomous Agents and Multiagent Systems (AAMAS), Stockholm, Sweden, July 11-13, 2018. (Poster with extended abstract) Note: The IJCAI version above supersedes this extended abstract.
+
+
+- "Optimal Control of Storage Regeneration with Repair Codes,"
+F. De Pellegrini, R. El-Azouzi, A. Silva, O. Hassani,
+Proc. of the International Workshop on the Future of Cloud Computing and Cloud Services (FutureCloud), Hong Kong, China, December 11-14, 2017.
+
+
+- "Novel Market Approach for Locally Balancing Renewable Energy Production and Flexible Demand,"
+J. Horta, D. Kofman, D. Menga, A. Silva,
+Proc. of the IEEE International Conference on Smart Grid Communications (SmartGridComm), Dresden, Germany, October 23-26, 2017.
+**Best Paper Award.**
+
+
+- "Evolution of Social Power for Opinion Dynamics Networks,"
+S. Iglesias Rey, P. Reyes, A. Silva,
+Proc. of the 55th Annual Allerton Conference on Communication, Control, and Computing (Allerton), Monticello, IL, USA, October 4-6, 2017.
+
+
+- "Advertising Competitions in Social Networks,"
+A.M. Masucci, A. Silva,
+Proc. of the American Control Conference (ACC), Seattle, WA, USA, May 24-26, 2017.
+
+
+- "Green Base Station Placement for Microwave Backhaul Links,"
+A. Silva, A.M. Masucci,
+Proc. of the 3rd International Symposium on Ubiquitous Networking (UNet), Casablanca, Morocco, May 9-12, 2017.
+**Best Paper Award.**
+
+
+- "Opinion Manipulation in Social Networks,"
+A. Silva,
+Proc. of the International Conference on Network Games, Control and Optimization (NETGCOOP),
+Avignon, France, November 23-25, 2016.
+
+
+- "Go-Index: Applying Supply Networks Principles as Internet Robustness Metrics,"
+I. Bachmann, F. Morales, A. Silva, J. Bustos-Jiménez,
+Proc. of the International Conference on Network Games, Control and Optimization (NETGCOOP),
+Avignon, France, November 23-25, 2016.
+
+
+- "On the Throughput-Delay Trade-off in Georouting Networks,"
+P. Jacquet, S. Malik, B. Mans, A. Silva,
+IEEE Transactions on Information Theory, Vol. 62, Issue 6, pp. 3230--3242, June 2016,\\
+ISSN: 0018-9448, DOI: 10.1109/TIT.2016.2519419.
+
+
+- "Defensive Resource Allocation in Social Networks,"
+A.M. Masucci, A. Silva,
+Proc. of the 54th IEEE Conference on Decision and Control (CDC), Osaka, Japan, December 15-18, 2015.
+
+ 
+- "Miuz: Measuring the Impact of Disconnecting a Node,"
+I. Bachmann, P. Reyes, A. Silva, J. Bustos-Jiménez,
+Proc. of the 34th SCCC 2015, Santiago, Chile, November 9-13, 2015.
+
+
+- "Strategic Resource Allocation for Competitive Influence in Social Networks,"
+A.M. Masucci, A. Silva,
+Proc. of the 52nd Annual Allerton Conference on Communication, Control, and Computing (Allerton), Monticello, IL, USA, October 1-3, 2014.
+
+- "Maximum Coverage and Maximum Connected Covering in Social Networks with Partial Topology Information,"
+P. Reyes, A. Silva,
+Proc. of the 6th IEEE INFOCOM Workshop on Network Science for Communication Networks (NetSciCom),
+Toronto, Canada, April 27- May 2, 2014.
+
+
+- "Information Spreading on Almost Torus Networks,"
+A.M. Masucci, A. Silva,
+Proc. of the 52nd IEEE Conference on Decision and Control (CDC), Florence, Italy, December 10-13, 2013.
+
+
+- "Optimal Mobile Association on Hybrid Networks: Centralized and Decentralized Case,"
+A. Silva, T. Hamidou, E. Altman, M. Debbah,
+IEEE Transactions on Automatic Control, Volume 58, Issue 8, Pages 2018-2031, August 2013, ISSN: 0018-9286,
+DOI: 10.1109/TAC.2013.2250072.
+
+
+- "A Multi-Layer Market for Vehicle-to-Grid Energy Trading in the Smart Grid,"
+A.Y.S. Lam, L. Huang, A. Silva, W. Saad.
+Proc. of the 1st IEEE INFOCOM Workshop on Green Networking and Smart Grids (CCSES), Orlando, FL, USA, March 25-30, 2012.
+
+
+- "On the Throughput-Delay Trade-off in Georouting Networks,"
+P. Jacquet, S. Malik, B. Mans, A. Silva.
+Proc. of the 31st IEEE INFOCOM 2012, Orlando, FL, USA,
+March 25-30, 2012.
+
+
+- "On the Spectral Gap of Random Geometric Graphs and Their Mobility Properties,"
+A. Silva, G. Tucci.
+Proc. of the The 7th International Conference on Mobile Ad-hoc and Sensor Networks (MSN), Beijing, China,
+December 16-18, 2011.
+**Second Best Paper Award.**
+
+
+- "Optimal base station placement based on interference gradient: the downlink case,"
+S. Malik, A. Silva, J-M. Kelif.
+Proc. of the 5th International Conference on Performance Evaluation Methodologies and Tools (Valuetools) 2011, Cachan, France,
+May 16-20, 2011.
+
+
+- "Spatial games combining base station placement and mobile association: the downlink case,"
+A. Silva, H. Tembine, E. Altman, M. Debbah.
+Proc. of the 49th IEEE Conference on Decision and Control (CDC), Atlanta, GA, USA,
+December 15-17, 2010.
+
+
+- "Uplink Spatial Games on Cellular Networks,"
+A. Silva, H. Tembine, M. Debbah, E. Altman.
+Proc. of the 48th Annual Allerton Conference on Communication, Control, and Computing (Allerton), Monticello, IL, USA,
+Sep. 29-Oct. 1, 2010.
+
+
+- "Continuum Equilibria and Global Optimization for Routing in Dense Static Ad Hoc Networks,"
+A. Silva, E. Altman, P. Bernhard, M. Debbah.
+Computer Networks, Volume 54, Issue 6, Pages 1005-1018, April 2010, ISSN: 1389-1286,
+DOI: 10.1016/j.comnet.2009.10.019.
+
+
+- "Magnetworks: how mobility impacts the design of mobile networks."
+A. Silva, E. Altman, M. Debbah, G. Alfano.
+Proc. of the 29th IEEE INFOCOM 2010, San Diego, CA, USA,
+March 15-19, 2010.
+
+
+- "Congestion in Randomly Deployed Wireless Ad Hoc/Sensor Networks,"
+A. Silva, P. Reyes, M. Debbah.
+Proc. of International Conference on Ultra Modern Telecommunications (ICUMT), St-Petersburg, Russia,
+October 12-14, 2009.
+
+
+- "Stochastic Games with One-Step Delay Sharing Information Pattern with Application to Power Control,"
+E. Altman, V. Kamble, A. Silva.
+Proc. of Gamenets 2009, Istanbul, Turkey,
+May 13-15, 2009.
+
+
+- "Numerical Solutions of Continuum Equilibria for Routing in Dense Ad Hoc Networks,"
+A. Silva, P. Bernhard, E. Altman.
+Proc. of the 3rd International Conference on Performance Evaluation Methodologies and Tools (Valuetools) 2008, Workshop Inter-Perf, Athens, Greece,
+October 20-24, 2008.
+
+
+- "The Space Frontier: Physical Limits of Multiple Antenna Information Transfer,"
+R. Couillet, S. Wagner, M. Debbah, A. Silva.
+Proc. of the 3rd International Conference on Performance Evaluation Methodologies and Tools (Valuetools) 2008, Workshop Inter-Perf, Athens, Greece,
+October 20-24, 2008.
+**Best Student Paper Award.**
+
+
+- "The Mathematics of Routing in Massively Dense Ad-Hoc Networks,"
+P. Bernhard, E. Altman, A. Silva.
+Proc. of AdHoc-NOW Conference, Sophia-Antipolis, France,
+September 10-13, 2008.
+
+
+- "Continuum Equilibria for Routing in Dense Ad-Hoc Networks,"
+E. Altman, A. Silva, P. Bernhard, M. Debbah.
+Proc. of 45th Annual Allerton Conference on Communication, Control, and Computing (Allerton), Monticello, IL, USA,
+September 26-28, 2007.

@@ -5,8 +5,10 @@ website:
   title: "Blog"
   navbar:
     right:
-      - href: https://alonsosilvaallende.github.io/
+      - href: index.qmd
         text: Home
+      - href: publications.qmd
+        text: Publications
       - href: blog/
         text: Blog
       - href: til/
