@@ -1,0 +1,25 @@
+project:
+  type: website
+
+website:
+  title: "Blog"
+  navbar:
+    right:
+      - href: https://alonsosilvaallende.github.io/
+        text: Home
+      - href: blog/
+        text: Blog
+      - href: til/
+        text: TIL
+    tools:
+      - icon: github
+        href: https://github.com/alonsosilvaallende
+      - icon: twitter
+        href: https://twitter.com/alonsosilva
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+
+

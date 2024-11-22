@@ -7,11 +7,10 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - href: https://alonsosilvaallende.github.io/blog/
+      - href: blog/
         text: Blog
-      - href: https://alonsosilvaallende.github.io/til/
+      - href: til/
         text: TIL
-      - about.qmd
     tools:
       - icon: github
         href: https://github.com/alonsosilvaallende

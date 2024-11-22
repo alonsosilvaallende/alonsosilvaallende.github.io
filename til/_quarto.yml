@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "TIL"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - href: blog/
+        text: Blog
+      - href: til/
+        text: TIL
+    tools:
+      - icon: github
+        href: https://github.com/alonsosilvaallende
+      - icon: twitter
+        href: https://twitter.com/alonsosilva
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+
+

@@ -1,0 +1,12 @@
+{
+  "hash": "32e85f6f5661a545b52674153f144adf",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: Quickly explore and share a SQLite database with Datasette and Datasette Lite\nauthor: Alonso Silva\ndate: '2024-11-22'\ncategories:\n  - code\nimage: datasette-logo.svg\n---\n\nI only recently learned about [Datasette](https://datasette.io/).\nMy interest came from the possibility to quickly explore a [SQLite database](https://www.sqlite.org/) and I am not disappointed.\nYou can explore a SQLite database `database.db` as follows:\n\n::: {.panel-tabset}\n## uv (ephemeral venv)\n```{.bash filename=\"Terminal\"}\nuvx datasette database.db\n```\n## uv (persistent venv)\n```{.bash filename=\"Terminal\"}\nuv venv\nsource .venv/bin/activate\nuv pip install datasette\ndatasette database.db\n```\n## pip\n```{.bash filename=\"Terminal\"}\npython -m venv .venv\nsource .venv/bin/activate\npython -m pip install datasette\ndatasette database.db\n```\n\n:::\n\nThis will pop up the following in your browser:\n\n![](datasette-1.png)\n\nWe get a nice indication of the title of the dataset, how many rows, and how many tables there are, as well as links to explore the tables. For example, if I click on the link for the table `responses` I get all the rows and columns of that table:\n\n![](datasette-2-short.jpg)\n\nYou can also use [Datasette Lite](https://github.com/simonw/datasette-lite) which runs in browser using WebAssembly and [Pyodide](https://pyodide.org/en/stable/) to share your SQLite database and let others to explore it.\nFor example, by putting a [SQLite database in GitHub](https://github.com/alonsosilvaallende/til/blob/main/posts/2024-11-21-Datasette/logs.db), you can upload it in [https://lite.datasette.io/](https://lite.datasette.io/), and you get a link to explore it in the following [link](https://lite.datasette.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2Falonsosilvaallende%2Ftil%2Fmain%2Fposts%2F2024-11-21-Datasette%2Flogs.db#/logs/responses) or directly below:\n\n\n```{=html}\n<iframe width=\"780\" height=\"500\" src=\"https://lite.datasette.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2Falonsosilvaallende%2Ftil%2Fmain%2Fposts%2F2024-11-21-Datasette%2Flogs.db#/logs/responses\" title=\"Webpage example\"></iframe>\n```\n\n",
+    "supporting": [
+      "Datasette_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
