@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://alonsosilvaallende.github.io/posts/2024-11-21-Datasette/Datasette.html</loc>
+    <loc>https://alonsosilvaallende.github.io/index.html</loc>
+    <lastmod>2024-11-22T11:16:14.170Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alonsosilvaallende.github.io/blog/posts/2024-04-23-Build_a_basic_widget_with_AnyWidget_in_a_Solara_app.html</loc>
+    <lastmod>2024-11-22T15:11:53.133Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alonsosilvaallende.github.io/blog/index.html</loc>
+    <lastmod>2024-11-22T11:25:19.270Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alonsosilvaallende.github.io/til/posts/2024-11-21-Datasette/Datasette.html</loc>
     <lastmod>2024-11-22T18:17:54.413Z</lastmod>
   </url>
   <url>
-    <loc>https://alonsosilvaallende.github.io/index.html</loc>
+    <loc>https://alonsosilvaallende.github.io/til/index.html</loc>
     <lastmod>2024-11-22T11:35:33.954Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alonsosilvaallende.github.io/publications.html</loc>
+    <lastmod>2024-11-22T14:50:40.258Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alonsosilvaallende.github.io/blog/posts/observatorio-de-sueldos-en-Chile/2023-04-21-Observatorio-de-sueldos-en-Chile.html</loc>
+    <lastmod>2024-11-22T11:25:19.290Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alonsosilvaallende.github.io/blog/posts/2024-04-19-Build_a_basic_LLM_chat_app_with_Solara.html</loc>
+    <lastmod>2024-11-22T15:13:59.629Z</lastmod>
   </url>
 </urlset>
