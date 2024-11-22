@@ -1,0 +1,40 @@
+---
+title: "Alonso Silva's Homepage"
+format: html
+---
+
+## Short Bio
+
+Hi 👋 My name is Alonso Silva and I'm a Senior Researcher on Generative AI at [Nokia Bell Labs](https://www.bell-labs.com/).
+
+I received my Ph.D. in Physics from the [École Supérieure d'Électricité (Supélec)](https://www.centralesupelec.fr/en) in 2010. I did my Ph.D. at [INRIA Sophia-Antipolis](https://www.inria.fr/en) under the direction of Professor Eitan Altman. Prior to my Ph.D., I received my Mathematical Engineering degree from the [Department of Mathematical Engineering (DIM)](http://www.dim.uchile.cl/) at the [Universidad de Chile](https://www.uchile.cl/) in 2006. I have previously worked as a Researcher at [Safran](https://en.wikipedia.org/wiki/Safran) from September 2018 to September 2022, a Researcher at [Bell Labs](https://www.bell-labs.com/) from September 2012 to August 2018, Postdoctoral Researcher in the [Department of EECS](https://eecs.berkeley.edu/) at the [University of California, Berkeley](https://www.berkeley.edu/), from September 2011 to August 2012 at [INRIA Paris Rocquencourt](https://www.inria.fr/en) from September 2010 to August 2011 and as Reseach Consultant/Intern at [Bell Labs Headquarters](https://www.bell-labs.com/) in New Jersey from March to May 2010.  I have received the Best Paper Award at IEEE SmartGridComm'17, UNet'17, the Second Best Paper Award at MSN'11 and the Best Student Paper Award at Valuetools'08.
+
+## Next talks
+
+- **Keynote:** "Improving Retrieval Augmented Generation (RAG) with Hybrid RAG," A. Silva, [Summer school in computational intelligence (EVIC)](https://www.evic.cl/), December 11-13, 2024.
+- **Keynote:** "Improving Retrieval Augmented Generation (RAG) with Hybrid RAG," A. Silva, [IADevs](https://www.iadevs.cl/), Dec 9, 2024.
+- "Building Knowledge Graph-Based Agents with Structured Text Generation and Open-Weights Models," A. Silva, [PyData Global](https://pydata.org/global2024), December 3-5, 2024.
+- "Improve (almost) any retrieval augmented generation (RAG) with hybrid RAG," A. Silva, [PyCon Chile](https://www.pycon.cl/), November 30-December 1, 2024.
+
+## Recent talks
+
+- [How to create reproducible notebooks (uv+marimo)](https://www.lincs.fr/events/uv-an-extremely-fast-python-package-installer-and-resolver-marimo-notebooks-rethinking-the-notebook-to-create-reproducible-notebooks/), A. Silva, Presentation at [LINCS](https://www.lincs.fr), November 8, 2024.
+{{< video https://www.youtube.com/embed/Qpb8M8R7NBk aspect-ratio="4x3" width="400" >}}
+
+- "Large Language Models Playing Mixed Strategy Nash Equilibrium Games," A. Silva, [NETGCOOP](https://netgcoop2024.univ-avignon.fr/), Oct 9-11, 2024.
+{{< video https://www.youtube.com/embed/bf0FZbuZDac aspect-ratio="4x3" width="400" >}}
+
+- “Enhancing RAG-based apps by constructing and leveraging knowledge graphs with open-weights LLMs,” A. Silva, PyData Paris, September 25-26, 2024.
+
+- "Large Language Models Playing Mixed Strategy Nash Equilibrium Games," A. Silva, LINCS Annual Workshop, June 27, 2024.
+{{< video https://www.youtube.com/embed/bf0FZbuZDac aspect-ratio="4x3" width="400" >}}
+
+
+- [How to create pure Python web apps (solara+anywidget)](https://www.lincs.fr/events/how-to-create-pure-python-web-apps-solaraanywidget/) A. Silva, Presentation at [LINCS](https://www.lincs.fr/), May 22, 2024.
+{{< video https://www.youtube.com/embed/KquyJJdQ9VM width="400" height="300" >}}
+
+- **Keynote:** [Catching up on the weird world of LLMs](https://www.youtube.com/watch?v=fyI8gbqImWk), A. Silva, PyCon Chile, November 24-26, 2023.
+{{< video https://www.youtube.com/embed/fyI8gbqImWk aspect-ratio="4x3" width="400" >}}
+
+- [When we cease to understand the world](https://www.youtube.com/watch?v=kllwJDFT5XM), A. Silva, Intervention at the European Parliament, November 16, 2023.
+{{< video https://www.youtube.com/embed/kllwJDFT5XM aspect-ratio="4x3" width="400" >}}
