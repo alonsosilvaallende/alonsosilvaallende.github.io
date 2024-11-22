@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Alonso Silva’s Homepage",
+    "section": "",
+    "text": "Hi 👋 My name is Alonso Silva and I’m a Senior Researcher on Generative AI at Nokia Bell Labs.\nI received my Ph.D. in Physics from the École Supérieure d’Électricité (Supélec) in 2010. I did my Ph.D. at INRIA Sophia-Antipolis under the direction of Professor Eitan Altman. Prior to my Ph.D., I received my Mathematical Engineering degree from the Department of Mathematical Engineering (DIM) at the Universidad de Chile in 2006. I have previously worked as a Researcher at Safran from September 2018 to September 2022, a Researcher at Bell Labs from September 2012 to August 2018, Postdoctoral Researcher in the Department of EECS at the University of California, Berkeley, from September 2011 to August 2012 at INRIA Paris Rocquencourt from September 2010 to August 2011 and as Reseach Consultant/Intern at Bell Labs Headquarters in New Jersey from March to May 2010. I have received the Best Paper Award at IEEE SmartGridComm’17, UNet’17, the Second Best Paper Award at MSN’11 and the Best Student Paper Award at Valuetools’08."
+  },
+  {
+    "objectID": "index.html#short-bio",
+    "href": "index.html#short-bio",
+    "title": "Alonso Silva’s Homepage",
+    "section": "",
+    "text": "Hi 👋 My name is Alonso Silva and I’m a Senior Researcher on Generative AI at Nokia Bell Labs.\nI received my Ph.D. in Physics from the École Supérieure d’Électricité (Supélec) in 2010. I did my Ph.D. at INRIA Sophia-Antipolis under the direction of Professor Eitan Altman. Prior to my Ph.D., I received my Mathematical Engineering degree from the Department of Mathematical Engineering (DIM) at the Universidad de Chile in 2006. I have previously worked as a Researcher at Safran from September 2018 to September 2022, a Researcher at Bell Labs from September 2012 to August 2018, Postdoctoral Researcher in the Department of EECS at the University of California, Berkeley, from September 2011 to August 2012 at INRIA Paris Rocquencourt from September 2010 to August 2011 and as Reseach Consultant/Intern at Bell Labs Headquarters in New Jersey from March to May 2010. I have received the Best Paper Award at IEEE SmartGridComm’17, UNet’17, the Second Best Paper Award at MSN’11 and the Best Student Paper Award at Valuetools’08."
+  },
+  {
+    "objectID": "index.html#next-talks",
+    "href": "index.html#next-talks",
+    "title": "Alonso Silva’s Homepage",
+    "section": "Next talks",
+    "text": "Next talks\n\nKeynote: “Improving Retrieval Augmented Generation (RAG) with Hybrid RAG,” A. Silva, Summer school in computational intelligence (EVIC), December 11-13, 2024.\nKeynote: “Improving Retrieval Augmented Generation (RAG) with Hybrid RAG,” A. Silva, IADevs, Dec 9, 2024.\n“Building Knowledge Graph-Based Agents with Structured Text Generation and Open-Weights Models,” A. Silva, PyData Global, December 3-5, 2024.\n“Improve (almost) any retrieval augmented generation (RAG) with hybrid RAG,” A. Silva, PyCon Chile, November 30-December 1, 2024."
+  },
+  {
+    "objectID": "index.html#recent-talks",
+    "href": "index.html#recent-talks",
+    "title": "Alonso Silva’s Homepage",
+    "section": "Recent talks",
+    "text": "Recent talks\n\nHow to create reproducible notebooks (uv+marimo), A. Silva, Presentation at LINCS, November 8, 2024.\n\n\n\n“Large Language Models Playing Mixed Strategy Nash Equilibrium Games,” A. Silva, NETGCOOP, Oct 9-11, 2024.\n\n\n\n“Enhancing RAG-based apps by constructing and leveraging knowledge graphs with open-weights LLMs,” A. Silva, PyData Paris, September 25-26, 2024.\n“Large Language Models Playing Mixed Strategy Nash Equilibrium Games,” A. Silva, LINCS Annual Workshop, June 27, 2024.\n\n\n\nHow to create pure Python web apps (solara+anywidget) A. Silva, Presentation at LINCS, May 22, 2024.\n\n\n\nKeynote: Catching up on the weird world of LLMs, A. Silva, PyCon Chile, November 24-26, 2023.\n\n\n\nWhen we cease to understand the world, A. Silva, Intervention at the European Parliament, November 16, 2023."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
