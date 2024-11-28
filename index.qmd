@@ -18,22 +18,23 @@ I received my Ph.D. in Physics from the [École Supérieure d'Électricité (Sup
 
 ## Recent talks
 
-- [How to create reproducible notebooks (uv+marimo)](https://www.lincs.fr/events/uv-an-extremely-fast-python-package-installer-and-resolver-marimo-notebooks-rethinking-the-notebook-to-create-reproducible-notebooks/), A. Silva, Presentation at [LINCS](https://www.lincs.fr), November 8, 2024.
+- [Enhancing RAG-based apps by constructing and leveraging knowledge graphs with open-weights LLMs](https://pretalx.com/pydata-paris-2024/talk/AZNEHE/), A. Silva, PyData Paris, September 25-26, 2024 [[slides](https://alonsosilvaallende.github.io/2024-PyData-Paris/)] [[code](https://github.com/alonsosilvaallende/2024-PyData-Paris/)]
+{{< video https://www.youtube.com/embed/sjprfQw5TJw aspect-ratio="4x3" width="400" >}}
+
+- [How to create reproducible notebooks (uv+marimo)](https://www.lincs.fr/events/uv-an-extremely-fast-python-package-installer-and-resolver-marimo-notebooks-rethinking-the-notebook-to-create-reproducible-notebooks/), A. Silva, Presentation at [LINCS](https://www.lincs.fr), November 8, 2024 [[slides](https://alonsosilvaallende.github.io/2024-11-08_uv_marimo_at_LINCS/)] [[code](https://github.com/alonsosilvaallende/2024-11-08_uv_marimo_at_LINCS)]
 {{< video https://www.youtube.com/embed/Qpb8M8R7NBk aspect-ratio="4x3" width="400" >}}
 
-- "Large Language Models Playing Mixed Strategy Nash Equilibrium Games," A. Silva, [NETGCOOP](https://netgcoop2024.univ-avignon.fr/), Oct 9-11, 2024.
-{{< video https://www.youtube.com/embed/bf0FZbuZDac aspect-ratio="4x3" width="400" >}}
-
-- “Enhancing RAG-based apps by constructing and leveraging knowledge graphs with open-weights LLMs,” A. Silva, PyData Paris, September 25-26, 2024.
-
-- "Large Language Models Playing Mixed Strategy Nash Equilibrium Games," A. Silva, LINCS Annual Workshop, June 27, 2024.
+- "Large Language Models Playing Mixed Strategy Nash Equilibrium Games," A. Silva, [NETGCOOP](https://netgcoop2024.univ-avignon.fr/), Oct 9-11, 2024 [[paper](https://arxiv.org/abs/2406.10574)] [[slides](https://github.com/alonsosilvaallende/2024-06-27-Presentation-LLMs-Playing-Mixed-Strategy-Nash-Equilibrium-Games/blob/main/Presentation.ipynb)][[code](https://github.com/alonsosilvaallende/2024-06-27-Presentation-LLMs-Playing-Mixed-Strategy-Nash-Equilibrium-Games)]
 {{< video https://www.youtube.com/embed/bf0FZbuZDac aspect-ratio="4x3" width="400" >}}
 
 
-- [How to create pure Python web apps (solara+anywidget)](https://www.lincs.fr/events/how-to-create-pure-python-web-apps-solaraanywidget/) A. Silva, Presentation at [LINCS](https://www.lincs.fr/), May 22, 2024.
+- "Large Language Models Playing Mixed Strategy Nash Equilibrium Games," A. Silva, LINCS Annual Workshop, June 27, 2024 [[paper](https://arxiv.org/abs/2406.10574)] [[slides](https://github.com/alonsosilvaallende/2024-06-27-Presentation-LLMs-Playing-Mixed-Strategy-Nash-Equilibrium-Games/blob/main/Presentation.ipynb)][[code](https://github.com/alonsosilvaallende/2024-06-27-Presentation-LLMs-Playing-Mixed-Strategy-Nash-Equilibrium-Games)]
+{{< video https://www.youtube.com/embed/bf0FZbuZDac aspect-ratio="4x3" width="400" >}}
+
+- [How to create pure Python web apps (solara+anywidget)](https://www.lincs.fr/events/how-to-create-pure-python-web-apps-solaraanywidget/) A. Silva, Presentation at [LINCS](https://www.lincs.fr/), May 22, 2024 [[slides](https://github.com/alonsosilvaallende/2024-05-22-Presentation_Solara_AnyWidget_at_LINCS/blob/main/2024-05-22-Presentation_Solara_AnyWidget_at_LINCS.ipynb)][[code](https://github.com/alonsosilvaallende/2024-05-22-Presentation_Solara_AnyWidget_at_LINCS)]
 {{< video https://www.youtube.com/embed/KquyJJdQ9VM width="400" height="300" >}}
 
-- **Keynote:** [Catching up on the weird world of LLMs](https://www.youtube.com/watch?v=fyI8gbqImWk), A. Silva, PyCon Chile, November 24-26, 2023.
+- **Keynote:** [Catching up on the weird world of LLMs](https://www.youtube.com/watch?v=fyI8gbqImWk), A. Silva, PyCon Chile, November 24-26, 2023 [[slides](https://alonsosilvaallende.github.io/PyCon_Chile_2023)] [[code](https://github.com/alonsosilvaallende/PyCon_Chile_2023)]
 {{< video https://www.youtube.com/embed/fyI8gbqImWk aspect-ratio="4x3" width="400" >}}
 
 - [When we cease to understand the world](https://www.youtube.com/watch?v=kllwJDFT5XM), A. Silva, Intervention at the European Parliament, November 16, 2023.
