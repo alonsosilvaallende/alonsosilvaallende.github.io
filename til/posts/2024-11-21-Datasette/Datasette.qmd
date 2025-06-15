@@ -7,7 +7,7 @@ categories:
 image: datasette-logo.svg
 jupyter:
   jupytext:
-    formats: 'ipynb,qmd:quarto'
+    formats: ipynb,qmd:quarto
     text_representation:
       extension: .qmd
       format_name: quarto
