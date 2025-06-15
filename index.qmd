@@ -9,14 +9,10 @@ Hi 👋 My name is Alonso Silva and I'm a Senior Researcher on Generative AI at 
 
 I received my Ph.D. in Physics from the [École Supérieure d'Électricité (Supélec)](https://www.centralesupelec.fr/en) in 2010. I did my Ph.D. at [INRIA Sophia-Antipolis](https://www.inria.fr/en) under the direction of Professor Eitan Altman. Prior to my Ph.D., I received my Mathematical Engineering degree from the [Department of Mathematical Engineering (DIM)](http://www.dim.uchile.cl/) at the [Universidad de Chile](https://www.uchile.cl/) in 2006. I have previously worked as a Researcher at [Safran](https://en.wikipedia.org/wiki/Safran) from September 2018 to September 2022, a Researcher at [Bell Labs](https://www.bell-labs.com/) from September 2012 to August 2018, Postdoctoral Researcher in the [Department of EECS](https://eecs.berkeley.edu/) at the [University of California, Berkeley](https://www.berkeley.edu/), from September 2011 to August 2012 at [INRIA Paris Rocquencourt](https://www.inria.fr/en) from September 2010 to August 2011 and as Reseach Consultant/Intern at [Bell Labs Headquarters](https://www.bell-labs.com/) in New Jersey from March to May 2010.  I have received the Best Paper Award at IEEE SmartGridComm'17, UNet'17, the Second Best Paper Award at MSN'11 and the Best Student Paper Award at Valuetools'08.
 
-## Next talks
-
-- **Keynote:** "Improving Retrieval Augmented Generation (RAG) with Hybrid RAG," A. Silva, [Summer school in computational intelligence (EVIC)](https://www.evic.cl/), December 11-13, 2024.
-- **Keynote:** "Improving Retrieval Augmented Generation (RAG) with Hybrid RAG," A. Silva, [IADevs](https://www.iadevs.cl/), Dec 9, 2024.
-- "Building Knowledge Graph-Based Agents with Structured Text Generation and Open-Weights Models," A. Silva, [PyData Global](https://pydata.org/global2024), December 3-5, 2024.
-- "Improve (almost) any retrieval augmented generation (RAG) with hybrid RAG," A. Silva, [PyCon Chile](https://www.pycon.cl/), November 30-December 1, 2024.
-
 ## Recent talks
+
+- [Building Knowledge Graph-Based Agents with Structured Text Generation and Open-Weights Models](https://global2024.pydata.org/cfp/talk/8QNSYP/), A. Silva, [PyData Global](https://pydata.org/global2024), December 3-5, 2024 [[slides](https://alonsosilvaallende.github.io/2024-PyData-Global/)] [[code](https://github.com/alonsosilvaallende/2024-PyData-Global)]
+{{< video https://www.youtube.com/watch?v=94yuQKoDKkE aspect-ratio="4x3" width="400" >}}
 
 - [Enhancing RAG-based apps by constructing and leveraging knowledge graphs with open-weights LLMs](https://pretalx.com/pydata-paris-2024/talk/AZNEHE/), A. Silva, PyData Paris, September 25-26, 2024 [[slides](https://alonsosilvaallende.github.io/2024-PyData-Paris/)] [[code](https://github.com/alonsosilvaallende/2024-PyData-Paris/)]
 {{< video https://www.youtube.com/embed/sjprfQw5TJw aspect-ratio="4x3" width="400" >}}
@@ -39,3 +35,7 @@ I received my Ph.D. in Physics from the [École Supérieure d'Électricité (Sup
 
 - [When we cease to understand the world](https://www.youtube.com/watch?v=kllwJDFT5XM), A. Silva, Intervention at the European Parliament, November 16, 2023.
 {{< video https://www.youtube.com/embed/kllwJDFT5XM aspect-ratio="4x3" width="400" >}}
+
+- **Keynote:** "Improving Retrieval Augmented Generation (RAG) with Hybrid RAG," A. Silva, [Summer school in computational intelligence (EVIC)](https://www.evic.cl/), December 11-13, 2024.
+- **Keynote:** "Improving Retrieval Augmented Generation (RAG) with Hybrid RAG," A. Silva, [IADevs](https://www.iadevs.cl/), Dec 9, 2024.
+- "Improve (almost) any retrieval augmented generation (RAG) with hybrid RAG," A. Silva, [PyCon Chile](https://www.pycon.cl/), November 30-December 1, 2024.
