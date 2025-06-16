@@ -1,0 +1,207 @@
+[
+    {
+        "question": "What's the capital of France?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Paris",
+                "correct": true,
+                "feedback": "That's correct!"
+            },
+            {
+                "answer": "London",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Rome",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Sydney",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Canberra",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Rio de Janeiro",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Brasília",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            }
+        ]
+    },
+    {
+        "question": "What's the capital of England?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Paris",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "London",
+                "correct": true,
+                "feedback": "That's correct!"
+            },
+            {
+                "answer": "Rome",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Sydney",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Canberra",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Rio de Janeiro",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Brasília",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            }
+        ]
+    },
+    {
+        "question": "What's the capital of Italy?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Paris",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "London",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Rome",
+                "correct": true,
+                "feedback": "That's correct!"
+            },
+            {
+                "answer": "Sydney",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Canberra",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Rio de Janeiro",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Brasília",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            }
+        ]
+    },
+    {
+        "question": "What's the capital of Australia?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Paris",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "London",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Rome",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Sydney",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Canberra",
+                "correct": true,
+                "feedback": "That's correct!"
+            },
+            {
+                "answer": "Rio de Janeiro",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Brasília",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            }
+        ]
+    },
+    {
+        "question": "What's the capital of Brazil?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Paris",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "London",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Rome",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Sydney",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Canberra",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Rio de Janeiro",
+                "correct": false,
+                "feedback": "That's wrong! Try again!"
+            },
+            {
+                "answer": "Brasília",
+                "correct": true,
+                "feedback": "That's correct!"
+            }
+        ]
+    }
+]
