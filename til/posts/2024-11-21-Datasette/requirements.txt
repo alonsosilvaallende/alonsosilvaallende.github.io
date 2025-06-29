@@ -2,11 +2,11 @@
 #    uv pip compile requirements.in
 aiofiles==24.1.0
     # via datasette
-anyio==4.6.2.post1
+anyio==4.9.0
     # via
     #   httpx
     #   jupyter-server
-argon2-cffi==23.1.0
+argon2-cffi==25.1.0
     # via jupyter-server
 argon2-cffi-bindings==21.2.0
     # via argon2-cffi
@@ -16,30 +16,30 @@ asgi-csrf==0.11
     # via datasette
 asgiref==3.8.1
     # via datasette
-asttokens==2.4.1
+asttokens==3.0.0
     # via stack-data
-async-lru==2.0.4
+async-lru==2.0.5
     # via jupyterlab
-attrs==24.2.0
+attrs==25.3.0
     # via
     #   jsonschema
     #   referencing
-babel==2.16.0
+babel==2.17.0
     # via jupyterlab-server
-beautifulsoup4==4.12.3
+beautifulsoup4==4.13.4
     # via nbconvert
 bleach==6.2.0
     # via nbconvert
-certifi==2024.8.30
+certifi==2025.6.15
     # via
     #   httpcore
     #   httpx
     #   requests
 cffi==1.17.1
     # via argon2-cffi-bindings
-charset-normalizer==3.4.0
+charset-normalizer==3.4.2
     # via requests
-click==8.1.7
+click==8.2.1
     # via
     #   click-default-group
     #   datasette
@@ -48,17 +48,17 @@ click-default-group==1.2.4
     # via datasette
 comm==0.2.2
     # via ipykernel
-datasette==0.65
+datasette==0.65.1
     # via -r requirements.in
-debugpy==1.8.9
+debugpy==1.8.14
     # via ipykernel
-decorator==5.1.1
+decorator==5.2.1
     # via ipython
 defusedxml==0.7.1
     # via nbconvert
-executing==2.1.0
+executing==2.2.0
     # via stack-data
-fastjsonschema==2.20.0
+fastjsonschema==2.21.1
     # via nbformat
 flexcache==0.3
     # via datasette
@@ -66,13 +66,13 @@ flexparser==0.4
     # via datasette
 fqdn==1.5.1
     # via jsonschema
-h11==0.14.0
+h11==0.16.0
     # via
     #   httpcore
     #   uvicorn
-httpcore==1.0.7
+httpcore==1.0.9
     # via httpx
-httpx==0.27.2
+httpx==0.28.1
     # via
     #   datasette
     #   jupyterlab
@@ -86,42 +86,44 @@ idna==3.10
     #   requests
 ipykernel==6.29.5
     # via jupyterlab
-ipython==8.29.0
+ipython==9.3.0
     # via ipykernel
+ipython-pygments-lexers==1.1.1
+    # via ipython
 isoduration==20.11.0
     # via jsonschema
 itsdangerous==2.2.0
     # via
     #   asgi-csrf
     #   datasette
-janus==1.1.0
+janus==2.0.0
     # via datasette
 jedi==0.19.2
     # via ipython
-jinja2==3.1.4
+jinja2==3.1.6
     # via
     #   datasette
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
     #   nbconvert
-json5==0.9.28
+json5==0.12.0
     # via jupyterlab-server
 jsonpointer==3.0.0
     # via jsonschema
-jsonschema==4.23.0
+jsonschema==4.24.0
     # via
     #   jupyter-events
     #   jupyterlab-server
     #   nbformat
-jsonschema-specifications==2024.10.1
+jsonschema-specifications==2025.4.1
     # via jsonschema
 jupyter-client==8.6.3
     # via
     #   ipykernel
     #   jupyter-server
     #   nbclient
-jupyter-core==5.7.2
+jupyter-core==5.8.1
     # via
     #   ipykernel
     #   jupyter-client
@@ -130,11 +132,11 @@ jupyter-core==5.7.2
     #   nbclient
     #   nbconvert
     #   nbformat
-jupyter-events==0.10.0
+jupyter-events==0.12.0
     # via jupyter-server
 jupyter-lsp==2.2.5
     # via jupyterlab
-jupyter-server==2.14.2
+jupyter-server==2.16.0
     # via
     #   jupyter-lsp
     #   jupyterlab
@@ -142,12 +144,18 @@ jupyter-server==2.14.2
     #   notebook-shim
 jupyter-server-terminals==0.5.3
     # via jupyter-server
-jupyterlab==4.3.1
+jupyterlab==4.4.3
     # via -r requirements.in
 jupyterlab-pygments==0.3.0
     # via nbconvert
 jupyterlab-server==2.27.3
     # via jupyterlab
+jupytext==1.17.2
+    # via -r requirements.in
+markdown-it-py==3.0.0
+    # via
+    #   jupytext
+    #   mdit-py-plugins
 markupsafe==3.0.2
     # via
     #   jinja2
@@ -156,17 +164,22 @@ matplotlib-inline==0.1.7
     # via
     #   ipykernel
     #   ipython
+mdit-py-plugins==0.4.2
+    # via jupytext
+mdurl==0.1.2
+    # via markdown-it-py
 mergedeep==1.3.4
     # via datasette
-mistune==3.0.2
+mistune==3.1.3
     # via nbconvert
-nbclient==0.10.0
+nbclient==0.10.2
     # via nbconvert
-nbconvert==7.16.4
+nbconvert==7.16.6
     # via jupyter-server
 nbformat==5.10.4
     # via
     #   jupyter-server
+    #   jupytext
     #   nbclient
     #   nbconvert
 nest-asyncio==1.6.0
@@ -175,12 +188,14 @@ notebook-shim==0.2.4
     # via jupyterlab
 overrides==7.7.0
     # via jupyter-server
-packaging==24.2
+packaging==25.0
     # via
     #   ipykernel
+    #   jupyter-events
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
+    #   jupytext
     #   nbconvert
 pandocfilters==1.5.1
     # via nbconvert
@@ -188,19 +203,19 @@ parso==0.8.4
     # via jedi
 pexpect==4.9.0
     # via ipython
-pip==24.3.1
+pip==25.1.1
     # via datasette
-platformdirs==4.3.6
+platformdirs==4.3.8
     # via
     #   datasette
     #   jupyter-core
-pluggy==1.5.0
+pluggy==1.6.0
     # via datasette
-prometheus-client==0.21.0
+prometheus-client==0.22.1
     # via jupyter-server
-prompt-toolkit==3.0.48
+prompt-toolkit==3.0.51
     # via ipython
-psutil==6.1.0
+psutil==7.0.0
     # via ipykernel
 ptyprocess==0.7.0
     # via
@@ -210,33 +225,35 @@ pure-eval==0.2.3
     # via stack-data
 pycparser==2.22
     # via cffi
-pygments==2.18.0
+pygments==2.19.2
     # via
     #   ipython
+    #   ipython-pygments-lexers
     #   nbconvert
 python-dateutil==2.9.0.post0
     # via
     #   arrow
     #   jupyter-client
-python-json-logger==2.0.7
+python-json-logger==3.3.0
     # via jupyter-events
-python-multipart==0.0.17
+python-multipart==0.0.20
     # via asgi-csrf
 pyyaml==6.0.2
     # via
     #   datasette
     #   jupyter-events
-pyzmq==26.2.0
+    #   jupytext
+pyzmq==27.0.0
     # via
     #   ipykernel
     #   jupyter-client
     #   jupyter-server
-referencing==0.35.1
+referencing==0.36.2
     # via
     #   jsonschema
     #   jsonschema-specifications
     #   jupyter-events
-requests==2.32.3
+requests==2.32.4
     # via jupyterlab-server
 rfc3339-validator==0.1.4
     # via
@@ -246,26 +263,23 @@ rfc3986-validator==0.1.1
     # via
     #   jsonschema
     #   jupyter-events
-rpds-py==0.21.0
+rpds-py==0.25.1
     # via
     #   jsonschema
     #   referencing
 send2trash==1.8.3
     # via jupyter-server
-setuptools==75.6.0
+setuptools==80.9.0
     # via
     #   datasette
     #   jupyterlab
-six==1.16.0
+six==1.17.0
     # via
-    #   asttokens
     #   python-dateutil
     #   rfc3339-validator
 sniffio==1.3.1
-    # via
-    #   anyio
-    #   httpx
-soupsieve==2.6
+    # via anyio
+soupsieve==2.7
     # via beautifulsoup4
 stack-data==0.6.3
     # via ipython
@@ -274,8 +288,8 @@ terminado==0.18.1
     #   jupyter-server
     #   jupyter-server-terminals
 tinycss2==1.4.0
-    # via nbconvert
-tornado==6.4.1
+    # via bleach
+tornado==6.5.1
     # via
     #   ipykernel
     #   jupyter-client
@@ -296,18 +310,21 @@ traitlets==5.14.3
     #   nbclient
     #   nbconvert
     #   nbformat
-types-python-dateutil==2.9.0.20241003
+types-python-dateutil==2.9.0.20250516
     # via arrow
-typing-extensions==4.12.2
+typing-extensions==4.14.0
     # via
+    #   anyio
+    #   beautifulsoup4
     #   datasette
     #   flexcache
     #   flexparser
+    #   referencing
 uri-template==1.3.0
     # via jsonschema
-urllib3==2.2.3
+urllib3==2.5.0
     # via requests
-uvicorn==0.32.1
+uvicorn==0.34.3
     # via datasette
 wcwidth==0.2.13
     # via prompt-toolkit

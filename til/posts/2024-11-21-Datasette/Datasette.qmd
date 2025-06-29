@@ -7,12 +7,12 @@ categories:
 image: datasette-logo.svg
 jupyter:
   jupytext:
-    formats: ipynb,qmd:quarto
+    formats: qmd:quarto,ipynb
     text_representation:
       extension: .qmd
       format_name: quarto
       format_version: '1.0'
-      jupytext_version: 1.16.4
+      jupytext_version: 1.17.2
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
