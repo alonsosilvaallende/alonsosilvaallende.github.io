@@ -1,0 +1,23 @@
+[
+  {
+    "listing": "/til/index.html",
+    "items": [
+      "/til/posts/2025-07-04-Chess/Chess.html",
+      "/til/posts/2025-06-29-Quarto-Marimo/marimo.html",
+      "/til/posts/2025-06-16-Jupyter_Quiz/JupyterQuiz.html",
+      "/til/posts/2025-06-15-Embed_REPL/Embed_REPL.html",
+      "/til/posts/2024-11-21-Datasette/Datasette.html"
+    ]
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/posts/2025-06-28-Understanding-Memory/Understanding_LLMs_Memory.html",
+      "/blog/posts/2025-06-20-Understanding-Chat-Templates/UnderstandingChatTemplates.html",
+      "/blog/posts/2025-06-17-Understanding-Tokenizers/UnderstandingTokenizers.html",
+      "/blog/posts/2024-04-23-Build_a_basic_widget_with_AnyWidget_in_a_Solara_app.html",
+      "/blog/posts/2024-04-19-Build_a_basic_LLM_chat_app_with_Solara.html",
+      "/blog/posts/observatorio-de-sueldos-en-Chile/2023-04-21-Observatorio-de-sueldos-en-Chile.html"
+    ]
+  }
+]

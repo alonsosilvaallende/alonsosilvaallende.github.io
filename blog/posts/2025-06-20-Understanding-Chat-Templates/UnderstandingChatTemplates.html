@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Alonso Silva">
+<meta name="dcterms.date" content="2025-06-20">
+
+<title>Understanding Chat Templates – Homepage</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-655c10e94217a44233fae49b0ef42ab6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-ded2ac748760c3f4308a83a578027308.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = true;
+    const darkModeDefault = authorPrefersDark;
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Homepage</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../blog/"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../til/"> 
+<span class="menu-text">TIL</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://github.com/alonsosilvaallende" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="https://twitter.com/alonsosilva" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Understanding Chat Templates</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">code</div>
+                <div class="quarto-category">analysis</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Alonso Silva </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 20, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#the-chat-template" id="toc-the-chat-template" class="nav-link" data-scroll-target="#the-chat-template">The Chat Template</a></li>
+  <li><a href="#tool-calls" id="toc-tool-calls" class="nav-link" data-scroll-target="#tool-calls">Tool calls</a></li>
+  <li><a href="#thinking-mode" id="toc-thinking-mode" class="nav-link" data-scroll-target="#thinking-mode">Thinking mode</a></li>
+  <li><a href="#how-does-the-chat-template-handles-this" id="toc-how-does-the-chat-template-handles-this" class="nav-link" data-scroll-target="#how-does-the-chat-template-handles-this">How does the chat template handles this?</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>If you have worked with LLMs, you might have worked with lists of <code>messages</code>. Indeed, when you send a request to an LLM, we can call it a <code>user messsage</code> and the response can be called an <code>assistant message</code>. A conversation would consist of a list of a <code>user message</code> followed by an <code>assistant message</code> followed by a <code>user message</code> followed by an <code>assistant message</code>, etc. However, an LLM takes one text and outputs another text, so you might be wondering what’s the input text that’s being passed to the LLM. So what’s going on?</p>
+<p>A user message will be something like this:</p>
+<div id="abee0f48-fd9c-445b-ab46-1e43b0fc369b" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-06-20T16:46:49.552824Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-06-20T16:46:49.552329Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-06-20T16:46:49.573223Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-06-20T16:46:49.572292Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-06-20T16:46:49.552753Z&quot;}}" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>user_message <span class="op">=</span> [{<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: <span class="st">"Hi!"</span>}]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You can pass the user message to the LLM to obtain an assistant message (it will take a few minutes the first time since it will download a small LLM):</p>
+<div id="a335a140-ff57-4936-bc92-8a2f283d17fd" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-06-20T16:46:49.574893Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-06-20T16:46:49.574372Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-06-20T16:46:49.602763Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-06-20T16:46:49.601825Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-06-20T16:46:49.574849Z&quot;}}" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="3">
+
+        <iframe width="900" height="400" src="https://jupyterlite.github.io/demo/repl/index.html?toolbar=1&amp;kernel=python&amp;promptCellPosition=left&amp;hideCodeInput=0&amp;clearCodeContentOnExecute=1&amp;code=%25pip%20install%20transformers_js_py%0A%0Afrom%20transformers_js_py%20import%20import_transformers_js%0A%0Atransformers%20%3D%20await%20import_transformers_js%28%29%0Apipeline%20%3D%20transformers.pipeline%0Apipe%20%3D%20await%20pipeline%28%27text-generation%27%2C%20%27onnx-community/Qwen2.5-0.5B-Instruct%27%29%0A%0Amessage%20%3D%20%5B%7B%22role%22%3A%20%22user%22%2C%20%22content%22%3A%20%22Hi%21%22%7D%5D%0Aout%20%3D%20await%20pipe%28message%2C%20max_new_tokens%3D10%2C%20temperature%3D0%2C%20seed%3D42%29%0Aout%5B0%5D%5B%27generated_text%27%5D%5B-1%5D&amp;execute=0" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<p>The assistant message will be something like this:</p>
+<div id="768be70f-4a35-4013-9473-eebf449069b2" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-06-20T16:46:49.604505Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-06-20T16:46:49.603897Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-06-20T16:46:49.619697Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-06-20T16:46:49.618782Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-06-20T16:46:49.604458Z&quot;}}" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>assistant_message <span class="op">=</span> [{<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: <span class="st">"Hello! How can I assist you today?"</span>}]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To have a conversation, you can pass it a list of messages:</p>
+<div id="d99b7abc-fe71-4c23-993f-d3bc749abcd2" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-06-20T16:46:49.621371Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-06-20T16:46:49.620838Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-06-20T16:46:49.642509Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-06-20T16:46:49.641529Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-06-20T16:46:49.621326Z&quot;}}" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>messages <span class="op">=</span> [</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: <span class="st">"Hi!"</span>},</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"role"</span>: <span class="st">"assistant"</span>, <span class="st">"content"</span>: <span class="st">"Hello! How can I assist you today?"</span>},</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: <span class="st">"What's the capital of France?"</span>},</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>How do we convert a list of messages to an input text?</p>
+<p>The first time I encountered this was with <a href="https://x.com/capetorch">Thomas Capelle</a> from <a href="https://wandb.ai/">W&amp;B</a>. Our conversation went something like this:</p>
+<blockquote class="blockquote">
+<p><strong>Thomas:</strong> An LLM has no idea about user or assistant messages, it is just an autocompletion program.</p>
+<p><strong>Alonso:</strong> So what’s going on with the list of messages I’m sending it? Are they just concatenated or what?</p>
+<p><strong>Thomas</strong>: No, no, no, it’s more complex than that, specially when you work with tools. You should check the model’s chat template.</p>
+<p><strong>Alonso</strong>: How do I do that?</p>
+<p><strong>Thomas</strong>: It’s stored in the tokenizer, let me show you.</p>
+</blockquote>
+</section>
+<section id="the-chat-template" class="level2">
+<h2 class="anchored" data-anchor-id="the-chat-template">The Chat Template</h2>
+<p>The chat template takes as input a list of messages (and tools but we will talk about it later) and convert them into a single string. Let’s see what it does with an example.</p>
+<div id="c1a47bdf-761f-4aec-8abd-1db825a542ac" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-06-20T16:46:49.644528Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-06-20T16:46:49.643945Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-06-20T16:46:49.667160Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-06-20T16:46:49.666310Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-06-20T16:46:49.644482Z&quot;}}" data-execution_count="6">
+<div class="cell-output cell-output-display" data-execution_count="6">
+
+        <iframe width="900" height="400" src="https://jupyterlite.github.io/demo/repl/index.html?toolbar=1&amp;kernel=python&amp;promptCellPosition=left&amp;hideCodeInput=0&amp;clearCodeContentOnExecute=1&amp;code=%25pip%20install%20transformers_js_py%0A%0Afrom%20transformers_js_py%20import%20import_transformers_js%0A%0Atransformers%20%3D%20await%20import_transformers_js%28%29%0AAutoTokenizer%20%3D%20transformers.AutoTokenizer%0A%0Amodel_id%20%3D%20%27Qwen/Qwen2.5-0.5B-Instruct%27%0Atokenizer%20%3D%20await%20AutoTokenizer.from_pretrained%28model_id%29%0A%0Amessage%20%3D%20%5B%7B%22role%22%3A%20%22user%22%2C%20%22content%22%3A%20%22Hi%21%22%7D%5D%0Aprint%28tokenizer.apply_chat_template%28message%2C%20tokenize%3DFalse%29%29&amp;execute=0" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<p>You should get the following:</p>
+<pre><code>&lt;|im_start|&gt;system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.&lt;|im_end|&gt;
+&lt;|im_start|&gt;user
+Hi!&lt;|im_end|&gt;</code></pre>
+<p>Notice that when you don’t provide a <code>system message</code>, the model <code>Qwen/Qwen2.5-0.5B-Instruct</code> adds a <code>system message</code> (“You are Qwen, created by Alibaba Cloud. You are a helpful assistant.”). Perhaps you want to change that to a different <code>system message</code>:</p>
+<div id="cda790a7-d12f-44c8-ba49-28b7c06eb603" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-06-20T16:46:49.669104Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-06-20T16:46:49.668296Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-06-20T16:46:49.690506Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-06-20T16:46:49.689591Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-06-20T16:46:49.669060Z&quot;}}" data-execution_count="7">
+<div class="cell-output cell-output-display" data-execution_count="7">
+
+        <iframe width="900" height="400" src="https://jupyterlite.github.io/demo/repl/index.html?toolbar=1&amp;kernel=python&amp;promptCellPosition=left&amp;hideCodeInput=0&amp;clearCodeContentOnExecute=1&amp;code=%25pip%20install%20transformers_js_py%0A%0Afrom%20transformers_js_py%20import%20import_transformers_js%0A%0Atransformers%20%3D%20await%20import_transformers_js%28%29%0AAutoTokenizer%20%3D%20transformers.AutoTokenizer%0A%0Amodel_id%20%3D%20%27Qwen/Qwen2.5-0.5B-Instruct%27%0Atokenizer%20%3D%20await%20AutoTokenizer.from_pretrained%28model_id%29%0A%0Amessages%20%3D%20%5B%0A%20%20%20%20%7B%22role%22%3A%20%22system%22%2C%20%22content%22%3A%20%22You%20are%20a%20helpful%20assistant.%22%7D%2C%0A%20%20%20%20%7B%22role%22%3A%20%22user%22%2C%20%22content%22%3A%20%22Hi%21%22%7D%2C%0A%5D%0Aprint%28tokenizer.apply_chat_template%28messages%2C%20tokenize%3DFalse%29%29&amp;execute=0" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<p>We can also see how does the chat template convert a conversation like this one:</p>
+<div id="73f7876b-f943-4ce3-8ad9-a2eb77f15d98" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-06-20T16:46:49.694746Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-06-20T16:46:49.694213Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-06-20T16:46:49.707822Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-06-20T16:46:49.706881Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-06-20T16:46:49.694701Z&quot;}}" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>messages <span class="op">=</span> [</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"role"</span>: <span class="st">"system"</span>, <span class="st">"content"</span>: <span class="st">"You are a helpful assistant."</span>},</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: <span class="st">"Hi!"</span>},</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"role"</span>: <span class="st">"assistant"</span>, <span class="st">"content"</span>: <span class="st">"Hello! How can I assist you today?"</span>},</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: <span class="st">"What's the capital of France?"</span>},</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="a6150bf6-be06-442d-a1e8-e31788149627" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-06-20T16:46:49.709692Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-06-20T16:46:49.708952Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-06-20T16:46:49.731403Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-06-20T16:46:49.730435Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-06-20T16:46:49.709645Z&quot;}}" data-execution_count="9">
+<div class="cell-output cell-output-display" data-execution_count="9">
+
+        <iframe width="900" height="400" src="https://jupyterlite.github.io/demo/repl/index.html?toolbar=1&amp;kernel=python&amp;promptCellPosition=left&amp;hideCodeInput=0&amp;clearCodeContentOnExecute=1&amp;code=%25pip%20install%20transformers_js_py%0A%0Afrom%20transformers_js_py%20import%20import_transformers_js%0A%0Atransformers%20%3D%20await%20import_transformers_js%28%29%0AAutoTokenizer%20%3D%20transformers.AutoTokenizer%0A%0Amodel_id%20%3D%20%27Qwen/Qwen2.5-0.5B-Instruct%27%0Atokenizer%20%3D%20await%20AutoTokenizer.from_pretrained%28model_id%29%0A%0Amessages%20%3D%20%5B%0A%20%20%20%20%7B%22role%22%3A%20%22system%22%2C%20%22content%22%3A%20%22You%20are%20a%20helpful%20assistant.%22%7D%2C%0A%20%20%20%20%7B%22role%22%3A%20%22user%22%2C%20%22content%22%3A%20%22Hi%21%22%7D%2C%0A%20%20%20%20%7B%22role%22%3A%20%22assistant%22%2C%20%22content%22%3A%20%22Hello%21%20How%20can%20I%20assist%20you%20today%3F%22%7D%2C%0A%20%20%20%20%7B%22role%22%3A%20%22user%22%2C%20%22content%22%3A%20%22What%27s%20the%20capital%20of%20France%3F%22%7D%2C%0A%5D%0Aprint%28tokenizer.apply_chat_template%28messages%2C%20tokenize%3DFalse%29%29&amp;execute=0" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<p>Each model has its own chat template. Let’s take a look at <code>Mistral-7B-v0.3</code> chat template:</p>
+<div id="1c4cbab2-152f-4d60-97c9-3cd4ee2c4028" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-06-20T16:46:49.733061Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-06-20T16:46:49.732617Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-06-20T16:46:49.754597Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-06-20T16:46:49.753760Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-06-20T16:46:49.733018Z&quot;}}" data-execution_count="10">
+<div class="cell-output cell-output-display" data-execution_count="10">
+
+        <iframe width="900" height="400" src="https://jupyterlite.github.io/demo/repl/index.html?toolbar=1&amp;kernel=python&amp;promptCellPosition=left&amp;hideCodeInput=0&amp;clearCodeContentOnExecute=1&amp;code=%25pip%20install%20transformers_js_py%0A%0Afrom%20transformers_js_py%20import%20import_transformers_js%0A%0Atransformers%20%3D%20await%20import_transformers_js%28%29%0AAutoTokenizer%20%3D%20transformers.AutoTokenizer%0A%0Amodel_id%20%3D%20%22MaziyarPanahi/Mistral-7B-Instruct-v0.3%22%0Atokenizer%20%3D%20await%20AutoTokenizer.from_pretrained%28model_id%29%0A%0Amessages%20%3D%20%5B%0A%20%20%20%20%7B%22role%22%3A%20%22user%22%2C%20%22content%22%3A%20%22Hi%21%22%7D%2C%0A%20%20%20%20%7B%22role%22%3A%20%22assistant%22%2C%20%22content%22%3A%20%22Hello%21%20How%20can%20I%20assist%20you%20today%3F%22%7D%2C%0A%20%20%20%20%7B%22role%22%3A%20%22user%22%2C%20%22content%22%3A%20%22What%27s%20the%20capital%20of%20France%3F%22%7D%2C%0A%5D%0Aprint%28tokenizer.apply_chat_template%28messages%2C%20tokenize%3DFalse%29%29&amp;execute=0" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<p>You should get:</p>
+<pre><code>&lt;s&gt;[INST] Hi! [/INST]Hello! How can I assist you today?&lt;/s&gt;[INST] What's the capital of France? [/INST]</code></pre>
+<p>Since after sending a <code>user message</code>, you expect an <code>assistant message</code>, you can help the model by basically saying “Now, it’s your turn!”. This is so useful that it has been incorporated into the chat template itself.</p>
+<p>The instruction is:</p>
+<pre><code>tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)</code></pre>
+<div id="79c75c04-5523-4a63-bf96-69f1d7339b72" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-06-20T16:46:49.756545Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-06-20T16:46:49.755706Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-06-20T16:46:49.777791Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-06-20T16:46:49.776916Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-06-20T16:46:49.756499Z&quot;}}" data-execution_count="11">
+<div class="cell-output cell-output-display" data-execution_count="11">
+
+        <iframe width="900" height="400" src="https://jupyterlite.github.io/demo/repl/index.html?toolbar=1&amp;kernel=python&amp;promptCellPosition=left&amp;hideCodeInput=0&amp;clearCodeContentOnExecute=1&amp;code=%25pip%20install%20transformers_js_py%0A%0Afrom%20transformers_js_py%20import%20import_transformers_js%0A%0Atransformers%20%3D%20await%20import_transformers_js%28%29%0AAutoTokenizer%20%3D%20transformers.AutoTokenizer%0A%0Amodel_id%20%3D%20%27Qwen/Qwen2.5-0.5B-Instruct%27%0Atokenizer%20%3D%20await%20AutoTokenizer.from_pretrained%28model_id%29%0A%0Amessages%20%3D%20%5B%0A%20%20%20%20%7B%22role%22%3A%20%22system%22%2C%20%22content%22%3A%20%22You%20are%20a%20helpful%20assistant.%22%7D%2C%0A%20%20%20%20%7B%22role%22%3A%20%22user%22%2C%20%22content%22%3A%20%22Hi%21%22%7D%2C%0A%5D%0Aprint%28tokenizer.apply_chat_template%28messages%2C%20tokenize%3DFalse%2C%20add_generation_prompt%3DTrue%29%29&amp;execute=0" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<p>You should get:</p>
+<pre><code>&lt;|im_start|&gt;system
+You are a helpful assistant.&lt;|im_end|&gt;
+&lt;|im_start|&gt;user
+Hi!&lt;|im_end|&gt;
+&lt;|im_start|&gt;assistant</code></pre>
+<p>What’s interesting to me is that when you suggest to force a tool call or to force a tool, they look at you thinking you’re crazy even though it’s exactly the same thing (and it’s probably what OpenAI <a href="https://platform.openai.com/docs/guides/function-calling?api-mode=chat#additional-configurations">already does</a> with the <code>tool_choice=required</code> and <code>tool_choice: {"type": "function", "function": {"name": "my_function"}}</code>.</p>
+</section>
+<section id="tool-calls" class="level2">
+<h2 class="anchored" data-anchor-id="tool-calls">Tool calls</h2>
+<p>The chat template also handles tool calls. That means that we can provide a list of tools (let’s do one as an example):</p>
+<div id="1a31433a-abf7-4eb6-9464-21a845dbcfe0" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-06-20T16:46:49.779814Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-06-20T16:46:49.778966Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-06-20T16:46:49.796043Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-06-20T16:46:49.795139Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-06-20T16:46:49.779765Z&quot;}}" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>tools <span class="op">=</span> [</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>        <span class="st">"type"</span>: <span class="st">"function"</span>,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        <span class="st">"function"</span>: {</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>            <span class="st">"name"</span>: <span class="st">"Python_REPL"</span>,</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>            <span class="st">"description"</span>: <span class="st">"A Python shell. Use this to execute python commands. Input should be a valid python command. If you want to see the output of a value, you should print it out with `print(...)`."</span>,</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>            <span class="st">"parameters"</span>: {</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>                <span class="st">"properties"</span>: {</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"python_code"</span>: {</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"description"</span>: <span class="st">"Valid python command."</span>,</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"type"</span>: <span class="st">"string"</span>,</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>                    }</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>                },</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>                <span class="st">"required"</span>: [<span class="st">"python_code"</span>],</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>                <span class="st">"type"</span>: <span class="st">"object"</span>,</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>            },</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>        },</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The instruction is:</p>
+<pre><code>tokenizer.apply_chat_template(messages, tokenize=False, tools=tools, add_generation_prompt=True)</code></pre>
+<div id="72d31b81-c49b-4ae6-a663-46c227ec2857" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-06-20T16:46:49.798101Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-06-20T16:46:49.797366Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-06-20T16:46:49.825506Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-06-20T16:46:49.824468Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-06-20T16:46:49.798056Z&quot;}}" data-execution_count="13">
+<div class="cell-output cell-output-display" data-execution_count="13">
+
+        <iframe width="900" height="400" src="https://jupyterlite.github.io/demo/repl/index.html?toolbar=1&amp;kernel=python&amp;promptCellPosition=left&amp;hideCodeInput=0&amp;clearCodeContentOnExecute=1&amp;code=%25pip%20install%20transformers_js_py%0A%0Afrom%20transformers_js_py%20import%20import_transformers_js%0A%0Atransformers%20%3D%20await%20import_transformers_js%28%29%0AAutoTokenizer%20%3D%20transformers.AutoTokenizer%0A%0Amodel_id%20%3D%20%27Qwen/Qwen2.5-0.5B-Instruct%27%0Atokenizer%20%3D%20await%20AutoTokenizer.from_pretrained%28model_id%29%0A%0Amessages%20%3D%20%5B%0A%20%20%20%20%7B%22role%22%3A%20%22system%22%2C%20%22content%22%3A%20%22You%20are%20a%20helpful%20assistant.%22%7D%2C%0A%20%20%20%20%7B%22role%22%3A%20%22user%22%2C%20%22content%22%3A%20%22What%27s%202%20to%20the%20power%20of%205%3F%22%7D%2C%0A%5D%0A%0Atools%20%3D%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22function%22%2C%0A%20%20%20%20%20%20%20%20%22function%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Python_REPL%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22description%22%3A%20%22A%20Python%20shell.%20Use%20this%20to%20execute%20python%20commands.%20Input%20should%20be%20a%20valid%20python%20command.%20If%20you%20want%20to%20see%20the%20output%20of%20a%20value%2C%20you%20should%20print%20it%20out%20with%20%60print%28...%29%60.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22parameters%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22python_code%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22description%22%3A%20%22Valid%20python%20command.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22string%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22required%22%3A%20%5B%22python_code%22%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22object%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%7D%0A%5D%0A%0Aprint%28tokenizer.apply_chat_template%28messages%2C%20tokenize%3DFalse%2C%20tools%3Dtools%2C%20add_generation_prompt%3DTrue%29%29&amp;execute=0" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<p>You should get the following:</p>
+<pre><code>&lt;|im_start|&gt;system
+You are a helpful assistant.
+
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within &lt;tools&gt;&lt;/tools&gt; XML tags:
+&lt;tools&gt;
+{"type": "function", "function": {"name": "Python_REPL", "description": "A Python shell. Use this to execute python commands. Input should be a valid python command. If you want to see the output of a value, you should print it out with `print(...)`.", "parameters": {"properties": {"python_code": {"description": "Valid python command.", "type": "string"}}, "required": ["python_code"], "type": "object"}}}
+&lt;/tools&gt;
+
+For each function call, return a json object with function name and arguments within &lt;tool_call&gt;&lt;/tool_call&gt; XML tags:
+&lt;tool_call&gt;
+{"name": &lt;function-name&gt;, "arguments": &lt;args-json-object&gt;}
+&lt;/tool_call&gt;&lt;|im_end|&gt;
+&lt;|im_start|&gt;user
+What's 2 to the power of 5?&lt;|im_end|&gt;
+&lt;|im_start|&gt;assistant</code></pre>
+<p>Quite complex string indeed.</p>
+<p>If you look at some other model <code>NousResearch/Hermes-3-Llama-3.1-8B</code>, you see the following:</p>
+<div id="bc0f5946-28e3-405e-b54d-22d21d3f9647" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-06-20T16:46:49.827040Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-06-20T16:46:49.826621Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-06-20T16:46:49.845243Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-06-20T16:46:49.844384Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-06-20T16:46:49.826997Z&quot;}}" data-execution_count="14">
+<div class="cell-output cell-output-display" data-execution_count="14">
+
+        <iframe width="900" height="400" src="https://jupyterlite.github.io/demo/repl/index.html?toolbar=1&amp;kernel=python&amp;promptCellPosition=left&amp;hideCodeInput=0&amp;clearCodeContentOnExecute=1&amp;code=%25pip%20install%20transformers_js_py%0A%0Afrom%20transformers_js_py%20import%20import_transformers_js%0A%0Atransformers%20%3D%20await%20import_transformers_js%28%29%0AAutoTokenizer%20%3D%20transformers.AutoTokenizer%0A%0Amodel_id%20%3D%20%27NousResearch/Hermes-3-Llama-3.1-8B%27%0Atokenizer%20%3D%20await%20AutoTokenizer.from_pretrained%28model_id%29%0A%0Amessages%20%3D%20%5B%0A%20%20%20%20%7B%22role%22%3A%20%22system%22%2C%20%22content%22%3A%20%22You%20are%20a%20helpful%20assistant.%22%7D%2C%0A%20%20%20%20%7B%22role%22%3A%20%22user%22%2C%20%22content%22%3A%20%22What%27s%202%20to%20the%20power%20of%205%3F%22%7D%2C%0A%5D%0A%0Atools%20%3D%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22function%22%2C%0A%20%20%20%20%20%20%20%20%22function%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Python_REPL%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22description%22%3A%20%22A%20Python%20shell.%20Use%20this%20to%20execute%20python%20commands.%20Input%20should%20be%20a%20valid%20python%20command.%20If%20you%20want%20to%20see%20the%20output%20of%20a%20value%2C%20you%20should%20print%20it%20out%20with%20%60print%28...%29%60.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22parameters%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22python_code%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22description%22%3A%20%22Valid%20python%20command.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22string%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22required%22%3A%20%5B%22python_code%22%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22object%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%7D%0A%5D%0A%0Aprint%28tokenizer.apply_chat_template%28messages%2C%20tokenize%3DFalse%2C%20tools%3Dtools%2C%20add_generation_prompt%3DTrue%29%29&amp;execute=0" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<p>You should get the following:</p>
+<pre><code>&lt;|begin_of_text|&gt;&lt;|im_start|&gt;system
+You are a function calling AI model. You are provided with function signatures within &lt;tools&gt;&lt;/tools&gt; XML tags. You may call one or more functions to assist with the user query. Don't make assumptions about what values to plug into functions. Here are the available tools: &lt;tools&gt; {"type": "function", "function": {"name": "Python_REPL", "description": "Python_REPL(python_code: str) - A Python shell. Use this to execute python commands. Input should be a valid python command. If you want to see the output of a value, you should print it out with `print(...)`.
+
+    Args:
+        python_code(str): Valid python command.", "parameters": {"properties": {"python_code": {"description": "Valid python command.", "type": "string"}}, "required": ["python_code"], "type": "object"}} &lt;/tools&gt;Use the following pydantic model json schema for each tool call you will make: {"properties": {"name": {"title": "Name", "type": "string"}, "arguments": {"title": "Arguments", "type": "object"}}, "required": ["name", "arguments"], "title": "FunctionCall", "type": "object"}}
+For each function call return a json object with function name and arguments within &lt;tool_call&gt;&lt;/tool_call&gt; XML tags as follows:
+&lt;tool_call&gt;
+{"name": &lt;function-name&gt;, "arguments": &lt;args-dict&gt;}
+&lt;/tool_call&gt;&lt;|im_end|&gt;
+&lt;|im_start|&gt;system
+You are a helpful assistant.&lt;|im_end|&gt;
+&lt;|im_start|&gt;user
+What's 2 to the power of 5?&lt;|im_end|&gt;
+&lt;|im_start|&gt;assistant</code></pre>
+<p>I don’t like this chat template. It appears that our messages have <strong>two different and consecutive</strong> system prompts. I prefer much more the previous chat template of the model “Qwen/Qwen2.5-0.5B-Instruct”.</p>
+</section>
+<section id="thinking-mode" class="level2">
+<h2 class="anchored" data-anchor-id="thinking-mode">Thinking mode</h2>
+<p>A recent addition is the <code>enable_thinking</code> in some new reasoning models where the model will “think” between the XML tags <code>&lt;think&gt;...&lt;/think&gt;</code>. For example in <code>Qwen/Qwen3-4B</code> the model has the possibility to reason (which is <em>the default</em>), but you can turn this option off if you want to. The instruction is:</p>
+<pre><code>tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=False)</code></pre>
+<div id="1ca69f04-6337-4faa-8827-2f4846ba3fd5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-06-20T16:46:49.846866Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-06-20T16:46:49.846350Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-06-20T16:46:49.872038Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-06-20T16:46:49.871191Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-06-20T16:46:49.846822Z&quot;}}" data-execution_count="15">
+<div class="cell-output cell-output-display" data-execution_count="15">
+
+        <iframe width="900" height="400" src="https://jupyterlite.github.io/demo/repl/index.html?toolbar=1&amp;kernel=python&amp;promptCellPosition=left&amp;hideCodeInput=0&amp;clearCodeContentOnExecute=1&amp;code=%25pip%20install%20transformers_js_py%0A%0Afrom%20transformers_js_py%20import%20import_transformers_js%0A%0Atransformers%20%3D%20await%20import_transformers_js%28%29%0AAutoTokenizer%20%3D%20transformers.AutoTokenizer%0A%0Amodel_id%20%3D%20%27Qwen/Qwen3-4B%27%0Atokenizer%20%3D%20await%20AutoTokenizer.from_pretrained%28model_id%29%0A%0Amessages%20%3D%20%5B%0A%20%20%20%20%7B%22role%22%3A%20%22system%22%2C%20%22content%22%3A%20%22You%20are%20a%20helpful%20assistant.%22%7D%2C%0A%20%20%20%20%7B%22role%22%3A%20%22user%22%2C%20%22content%22%3A%20%22How%20many%20r%27s%20in%20strawberry%3F%22%7D%2C%0A%5D%0A%0Aprint%28tokenizer.apply_chat_template%28messages%2C%20tokenize%3DFalse%2C%20add_generation_prompt%3DTrue%2C%20enable_thinking%3DFalse%29%29&amp;execute=0" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<p>You should get:</p>
+<pre><code>&lt;|im_start|&gt;system
+You are a helpful assistant.&lt;|im_end|&gt;
+&lt;|im_start|&gt;user
+How many r's in strawberry?&lt;|im_end|&gt;
+&lt;|im_start|&gt;assistant
+&lt;think&gt;
+
+&lt;/think&gt;</code></pre>
+<p>I saw some tweets (with multiple retweets) claiming they found a “hack” to make the model not think and it was appending <code>&lt;think&gt;\n\n&lt;/think&gt;</code> while this is exactly what the chat template does!!!</p>
+</section>
+<section id="how-does-the-chat-template-handles-this" class="level2">
+<h2 class="anchored" data-anchor-id="how-does-the-chat-template-handles-this">How does the chat template handles this?</h2>
+<p>The chat template has been programmed in <a href="https://jinja.palletsprojects.com/en/stable/">Jinja</a> which is usually used in web development. You can see the chat template with the following command:</p>
+<div id="340f1070-d7ea-4221-b632-8fa613fb8061" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-06-20T16:46:49.873754Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-06-20T16:46:49.873225Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-06-20T16:46:49.891239Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-06-20T16:46:49.890335Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-06-20T16:46:49.873711Z&quot;}}" data-execution_count="16">
+<div class="cell-output cell-output-display" data-execution_count="16">
+
+        <iframe width="900" height="400" src="https://jupyterlite.github.io/demo/repl/index.html?toolbar=1&amp;kernel=python&amp;promptCellPosition=left&amp;hideCodeInput=0&amp;clearCodeContentOnExecute=1&amp;code=%25pip%20install%20transformers_js_py%0A%0Afrom%20transformers_js_py%20import%20import_transformers_js%0A%0Atransformers%20%3D%20await%20import_transformers_js%28%29%0AAutoTokenizer%20%3D%20transformers.AutoTokenizer%0A%0Amodel_id%20%3D%20%27Qwen/Qwen3-4B%27%0Atokenizer%20%3D%20await%20AutoTokenizer.from_pretrained%28model_id%29%0A%0Aprint%28tokenizer.chat_template%29&amp;execute=0" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<p>You should see the following:</p>
+<pre><code>{%- if tools %}
+    {{- '&lt;|im_start|&gt;system\n' }}
+    {%- if messages[0].role == 'system' %}
+        {{- messages[0].content + '\n\n' }}
+    {%- endif %}
+    {{- "# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within &lt;tools&gt;&lt;/tools&gt; XML tags:\n&lt;tools&gt;" }}
+    {%- for tool in tools %}
+        {{- "\n" }}
+        {{- tool | tojson }}
+    {%- endfor %}
+    {{- "\n&lt;/tools&gt;\n\nFor each function call, return a json object with function name and arguments within &lt;tool_call&gt;&lt;/tool_call&gt; XML tags:\n&lt;tool_call&gt;\n{\"name\": &lt;function-name&gt;, \"arguments\": &lt;args-json-object&gt;}\n&lt;/tool_call&gt;&lt;|im_end|&gt;\n" }}
+{%- else %}
+    {%- if messages[0].role == 'system' %}
+        {{- '&lt;|im_start|&gt;system\n' + messages[0].content + '&lt;|im_end|&gt;\n' }}
+    {%- endif %}
+{%- endif %}
+{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}
+{%- for message in messages[::-1] %}
+    {%- set index = (messages|length - 1) - loop.index0 %}
+    {%- if ns.multi_step_tool and message.role == "user" and message.content is string and not(message.content.startswith('&lt;tool_response&gt;') and message.content.endswith('&lt;/tool_response&gt;')) %}
+        {%- set ns.multi_step_tool = false %}
+        {%- set ns.last_query_index = index %}
+    {%- endif %}
+{%- endfor %}
+{%- for message in messages %}
+    {%- if message.content is string %}
+        {%- set content = message.content %}
+    {%- else %}
+        {%- set content = '' %}
+    {%- endif %}
+    {%- if (message.role == "user") or (message.role == "system" and not loop.first) %}
+        {{- '&lt;|im_start|&gt;' + message.role + '\n' + content + '&lt;|im_end|&gt;' + '\n' }}
+    {%- elif message.role == "assistant" %}
+        {%- set reasoning_content = '' %}
+        {%- if message.reasoning_content is string %}
+            {%- set reasoning_content = message.reasoning_content %}
+        {%- else %}
+            {%- if '&lt;/think&gt;' in content %}
+                {%- set reasoning_content = content.split('&lt;/think&gt;')[0].rstrip('\n').split('&lt;think&gt;')[-1].lstrip('\n') %}
+                {%- set content = content.split('&lt;/think&gt;')[-1].lstrip('\n') %}
+            {%- endif %}
+        {%- endif %}
+        {%- if loop.index0 &gt; ns.last_query_index %}
+            {%- if loop.last or (not loop.last and reasoning_content) %}
+                {{- '&lt;|im_start|&gt;' + message.role + '\n&lt;think&gt;\n' + reasoning_content.strip('\n') + '\n&lt;/think&gt;\n\n' + content.lstrip('\n') }}
+            {%- else %}
+                {{- '&lt;|im_start|&gt;' + message.role + '\n' + content }}
+            {%- endif %}
+        {%- else %}
+            {{- '&lt;|im_start|&gt;' + message.role + '\n' + content }}
+        {%- endif %}
+        {%- if message.tool_calls %}
+            {%- for tool_call in message.tool_calls %}
+                {%- if (loop.first and content) or (not loop.first) %}
+                    {{- '\n' }}
+                {%- endif %}
+                {%- if tool_call.function %}
+                    {%- set tool_call = tool_call.function %}
+                {%- endif %}
+                {{- '&lt;tool_call&gt;\n{"name": "' }}
+                {{- tool_call.name }}
+                {{- '", "arguments": ' }}
+                {%- if tool_call.arguments is string %}
+                    {{- tool_call.arguments }}
+                {%- else %}
+                    {{- tool_call.arguments | tojson }}
+                {%- endif %}
+                {{- '}\n&lt;/tool_call&gt;' }}
+            {%- endfor %}
+        {%- endif %}
+        {{- '&lt;|im_end|&gt;\n' }}
+    {%- elif message.role == "tool" %}
+        {%- if loop.first or (messages[loop.index0 - 1].role != "tool") %}
+            {{- '&lt;|im_start|&gt;user' }}
+        {%- endif %}
+        {{- '\n&lt;tool_response&gt;\n' }}
+        {{- content }}
+        {{- '\n&lt;/tool_response&gt;' }}
+        {%- if loop.last or (messages[loop.index0 + 1].role != "tool") %}
+            {{- '&lt;|im_end|&gt;\n' }}
+        {%- endif %}
+    {%- endif %}
+{%- endfor %}
+{%- if add_generation_prompt %}
+    {{- '&lt;|im_start|&gt;assistant\n' }}
+    {%- if enable_thinking is defined and enable_thinking is false %}
+        {{- '&lt;think&gt;\n\n&lt;/think&gt;\n\n' }}
+    {%- endif %}
+{%- endif %}</code></pre>
+<p>After spending some time understanding what’s going on, you can create your own if you want to change its behavior.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
