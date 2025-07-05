@@ -1,0 +1,229 @@
+---
+title: Understanding LLM Memory
+author: Alonso Silva
+date: '2025-06-28'
+categories:
+  - code
+  - analysis
+format:
+  html:
+    code-tools: true
+    code-fold: true
+    code-summary: Show the code
+filters:
+  - marimo-team/marimo
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.17.2
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+## Understanding LLM Memory
+
+Despite what some people think (even some researchers I've met), language models don't have any memory.
+The confusion comes, I suppose, from the fact that most people interact with models
+through some user interface like [www.chatgpt.com](www.chatgpt.com), which handles the memory for them
+(incidentally, in some interesting ways as explained below).
+
+Let's explore this further. Let's use [`transformers_js_py`](https://github.com/whitphx/transformers.js.py) which allows us to use language models in the browser.
+
+```python {.marimo}
+#| echo: true
+
+# Installation:
+# %pip install transformers_js_py
+import marimo as mo
+import numpy as np
+from transformers_js_py import import_transformers_js
+
+transformers = await import_transformers_js()
+```
+
+Let's download a small model and its tokenizer (it takes a few minutes):
+
+```python {.marimo}
+#| echo: true
+model_id = "onnx-community/Qwen3-0.6B-ONNX"
+
+AutoTokenizer = transformers.AutoTokenizer
+tokenizer = await AutoTokenizer.from_pretrained(model_id)
+```
+
+```python {.marimo}
+#| echo: true
+AutoModelForCausalLM = transformers.AutoModelForCausalLM
+with mo.status.spinner(title="Loading...") as _spinner:
+    model = await AutoModelForCausalLM.from_pretrained(model_id)
+```
+
+We can ask the question `What's 2 + 2?` and get the following response:
+```python {.marimo}
+#| echo: true
+user_input_0 = mo.ui.text(value="What's 2 + 2?")
+```
+
+```python {.marimo}
+#| echo: true
+messages_0 = [
+    {"role": "user", "content": user_input_0.value},
+]
+prompt_0 = tokenizer.apply_chat_template(
+    messages_0, 
+    tokenize=False, 
+    add_generation_prompt=True, 
+    enable_thinking=False
+)
+inputs_0 = tokenizer(prompt_0)
+input_tokens_0 = np.array(inputs_0['input_ids'].tolist(), dtype=np.uint32)
+input_len_0 = input_tokens_0.shape[1]
+outputs_0 = await model.generate(
+    **inputs_0, max_new_tokens=50, do_sample=False
+)
+tokens_as_uint32_0 = np.array(outputs_0.tolist(), dtype=np.uint32)
+assistant_response_0 = tokenizer.decode([int(token) for token in tokens_as_uint32_0[0]][input_len_0:-1])
+response_0 = mo.md(f"**Assistant response:**\n\n {assistant_response_0}").callout("info")
+mo.vstack([user_input_0,response_0])
+```
+
+If we ask the model to add to the result 2 more, we get the following response:
+```python {.marimo}
+#| echo: true
+user_input_1 = mo.ui.text(value="Add to the result 2 more.", full_width=True)
+```
+
+```python {.marimo}
+#| echo: true
+messages_1 = [
+    {"role": "user", "content": user_input_1.value},
+]
+prompt_1 = tokenizer.apply_chat_template(messages_1, tokenize=False, add_generation_prompt=True, enable_thinking=False)
+inputs_1 = tokenizer(prompt_1)
+input_tokens_1 = np.array(inputs_1['input_ids'].tolist(), dtype=np.uint32)
+input_len_1 = input_tokens_1.shape[1]
+outputs_1 = await model.generate(
+    **inputs_1, max_new_tokens=50, do_sample=False
+)
+tokens_as_uint32_1 = np.array(outputs_1.tolist(), dtype=np.uint32)
+assistant_response_1 = tokenizer.decode([int(token) for token in tokens_as_uint32_1[0]][input_len_1:-1])
+response_1 = mo.md(f"**Assistant response:**\n\n {assistant_response_1}").callout("info")
+mo.vstack([user_input_1,response_1])
+```
+
+
+The model doesn't have any recollection of our previous conversation.
+Now, that's completely expected since we haven't provided the model any way to access that information. 
+
+## Handling Memory
+
+The simplest way to handle memory is to provide our previous conversation within a list of messages:
+
+```python {.marimo}
+#| echo: true
+messages_2 = messages_0 + [
+    {"role": "assistant", "content": assistant_response_0},
+] +  messages_1
+prompt_2 = tokenizer.apply_chat_template(messages_2, tokenize=False, add_generation_prompt=True, enable_thinking=False)
+```
+
+With all these messages we obtain the following response:
+```python {.marimo}
+#| echo: true
+inputs_2 = tokenizer(prompt_2)
+input_tokens_2 = np.array(inputs_2['input_ids'].tolist(), dtype=np.uint32)
+input_len_2 = input_tokens_2.shape[1]
+outputs_2 = await model.generate(
+    **inputs_2, max_new_tokens=50, do_sample=False
+)
+tokens_as_uint32_2 = np.array(outputs_2.tolist(), dtype=np.uint32)
+assistant_response_2 = tokenizer.decode([int(token) for token in tokens_as_uint32_2[0]][input_len_2:-1])
+response_2 = mo.md(f"**Assistant response:**\n\n {assistant_response_2}").callout("info")
+mo.vstack([user_input_1,response_2])
+```
+
+That works! The problem with that approach is that we need to be mindful of the context length of the model.
+We could for example store only the last 10 messages or so and perhaps the system message if there is one (in this example, we don't have one).
+
+More sophisticated approaches could be to store the messages and its responses in a vector database and retrieve the most closely related ones.
+Similarly, we could store the information as a graph in a graph database and retrieve the nodes and edges most closely related.
+
+ChatGPT's memory feature is very interesting because it uses memory as a tool.
+Let's take a look at that.
+
+We can define the tools as follows:
+```
+tools = [
+    {
+        "type": "function",
+        "function": {
+            "name": "biography",
+            "description": "The biography tool allows you to persist user information across conversations. Use this tool and write whatever user information you want to remember. The information will appear in the model set context below in future conversations.",
+            "parameters": {
+                "properties": {
+                    "user_information": {
+                        "description": "Information from the user you want to remember across conversations.",
+                        "type": "string",
+                    }
+                },
+                "required": ["user_information"],
+                "type": "object",
+            },
+        },
+    }
+]
+```
+
+```python {.marimo}
+#| echo: true
+user_input_3 = mo.ui.text(value="Hello! In our conversations, remember that I prefer Polars to Pandas.", full_width=True)
+```
+
+```python {.marimo}
+#| echo: true
+messages = [
+    {"role": "user", "content": user_input_3.value},
+]
+
+tools = [
+    {
+        "type": "function",
+        "function": {
+            "name": "biography",
+            "description": "The biography tool allows you to persist user information across conversations. Use this tool and write whatever user information you want to remember. The information will appear in the model set context below in future conversations.",
+            "parameters": {
+                "properties": {
+                    "user_information": {
+                        "description": "Information from the user you want to remember across conversations.",
+                        "type": "string",
+                    }
+                },
+                "required": ["user_information"],
+                "type": "object",
+            },
+        },
+    }
+]
+
+prompt_3 = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, tools=tools, enable_thinking=False)
+prompt_3 += "<tool_call>"
+inputs_3 = tokenizer(prompt_3)
+input_tokens_3 = np.array(inputs_3['input_ids'].tolist(), dtype=np.uint32)
+input_len_3 = input_tokens_3.shape[1]
+outputs_3 = await model.generate(
+    **inputs_3, max_new_tokens=50, do_sample=False
+)
+tokens_as_uint32_3 = np.array(outputs_3.tolist(), dtype=np.uint32)
+assistant_response_3 = tokenizer.decode([int(token) for token in tokens_as_uint32_3[0]][input_len_3:-1])
+assistant_response_3_md = assistant_response_3.replace("<", "&lt;").replace(">", "&gt;")
+response_3 = mo.md(f"**Assistant response:**\n\n {assistant_response_3_md}").callout("info")
+mo.vstack([user_input_3,response_3])
+```
+
+We can then store the tool call as a text file and provide it in the context.
+
+I really like that idea. It's very simple and clean!
