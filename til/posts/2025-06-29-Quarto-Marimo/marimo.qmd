@@ -1,0 +1,108 @@
+---
+title: "How to add marimo notebook cells to Quarto projects"
+author: "Alonso Silva"
+date: "2025-06-29"
+categories:
+  - code
+  - analysis
+image: assets/Quarto_Marimo.jpg
+filters:
+  - marimo-team/marimo
+---
+
+TIL how to add [marimo](https://marimo.io/) notebook cells to [Quarto](https://quarto.org/) projects such as this one:
+
+```python {.marimo}
+import marimo as mo
+
+slider = mo.ui.slider(1, 30)
+```
+
+```python {.marimo}
+mo.md(
+    f"""
+    This is a **reactive** marimo notebook cell that **runs automatically**
+    when you modify them or
+    interact with UI elements, like this slider: {slider}
+
+    {"##" + "🍃" * slider.value}
+    """
+).callout("info")
+```
+
+## Instructions
+
+1. Install [uv](https://docs.astral.sh/uv/) (if you haven't yet):
+```{.bash filename="Terminal"}
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+2. Create a [Quarto](https://quarto.org/) project (if you haven't yet):
+```{.bash filename="Terminal"}
+uvx --from quarto-cli quarto create project
+```
+
+Here are some example configuration options:
+
+![](./assets/Quarto_00.jpg){width=80%}
+
+3. Enter into the project folder and add the marimo extension:
+```{.bash filename="Terminal"}
+uvx --from quarto-cli quarto add marimo-team/quarto-marimo
+```
+
+![](./assets/Quarto_01.jpg){width=80%}
+
+4. Edit the `index.qmd` file (this is an example):
+````{.default filename="index.qmd"}
+---
+title: "test-quarto-marimo"
+filters:
+  - marimo-team/marimo
+---
+```python {.marimo}
+import marimo as mo
+
+slider = mo.ui.slider(1, 30)
+```
+
+```python {.marimo}
+mo.md(
+    f"""
+    This is a **reactive** Python notebook that **runs automatically**
+    when you modify them or
+    interact with UI elements, like this slider: {slider}
+
+    {"##" + "🍃" * slider.value}
+    """
+).callout("info")
+````
+
+5. Preview the project:
+```{.bash filename="Terminal"}
+uvx --with marimo --from quarto-cli quarto preview
+```
+
+
+6. Deploy it (for example to GitHub pages), the command is the following:
+```{.bash filename="Terminal"}
+uvx --with marimo --from quarto-cli quarto publish
+```
+
+![](./assets/Quarto_02.jpg){width=80%}
+
+
+There is a nice video by the marimo team explaining the whole process:
+{{< video https://www.youtube.com/embed/scuGmtv81S0 width="400" height="300" >}}
+
+## Conclusions
+
+If you have read [my previous post](https://alonsosilvaallende.github.io/til/posts/2025-06-15-Embed_REPL/Embed_REPL.html),
+you know I am very excited that we can now embed a single executable cell inside a website.
+You can also embed a [whole notebook](https://jupyterlite-sphinx.readthedocs.io/en/stable/full.html#tips-for-handling-urls)
+inside a website.
+However, I love the idea of adding many dependent executable cells to a website such as with this extension.
+The reactivity is definitely a nice plus!
+
+
+
