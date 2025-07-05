@@ -781,7 +781,9 @@ $$
 1234567 \times 8765432 = \boxed{1099999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999</code></pre>
 </div>
 </div>
-<p>This model is not particularly good but even GPT-4o-mini fails without using function calling: <a href="https://chatgpt.com/s/t_686901e99a648191815170ed3c83083b">https://chatgpt.com/s/t_686901e99a648191815170ed3c83083b</a></p>
+<p>This model is not particularly good but even GPT-4o-mini fails without using function calling:</p>
+<p><img src="ChatGPT-multiplication.jpg" class="img-fluid"></p>
+<p>Here is the link to that conversation: <a href="https://chatgpt.com/s/t_686901e99a648191815170ed3c83083b">https://chatgpt.com/s/t_686901e99a648191815170ed3c83083b</a></p>
 <p>An analogy of function calling is that to ask a language model directly to perform a computation is similar to ask someone to make that computation in his head. It’s hard! However, if we gave him a calculator, he could solve it quite easily. He needs to know only two things:</p>
 <ol type="1">
 <li>which operation (or function) to use</li>
@@ -1026,7 +1028,7 @@ What's 1234567 times 8765432?&lt;|im_end|&gt;
 }</code></pre>
 </div>
 </div>
-<p>We can ask our model to <code>make a bar plot</code> and see if he can figure out what to do:</p>
+<p>We can ask our model to, for example, <code>make a bar plot</code>. In this case, the language model couldn’t figure out what to do:</p>
 <div id="2dd18fa2-688c-4349-95a4-512f46974b06" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-05T13:52:23.305767Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-05T13:52:23.304682Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-05T13:52:24.125488Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-05T13:52:24.125001Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-05T13:52:23.305714Z&quot;}}" data-execution_count="27">
 <details class="code-fold">
 <summary>Show the code</summary>
@@ -1054,7 +1056,7 @@ What's 1234567 times 8765432?&lt;|im_end|&gt;
 <pre><code>I cannot make a bar plot directly, but I can help you create one using Python. Could you please provide the data you want to plot?</code></pre>
 </div>
 </div>
-<p>The model was unable to call the tool but we can help it by adding it directly to the prompt (notice that this is equivalent to <code>add_generation_prompt=True</code> when we apply the chat template). This is probably (what OpenAI does)[https://platform.openai.com/docs/guides/function-calling/function-calling-behavior?api-mode=chat#additional-configurations] with the option <code>tool_choice=required</code> and we could even impose which tool to call which is equivalent to the forced function that OpenAI provides). Let’s add the tool call directly to the prompt:</p>
+<p>The model was unable to call the tool but we can help it by adding it directly to the prompt (notice that this is equivalent to <code>add_generation_prompt=True</code> when we apply the chat template). This is probably <a href="https://platform.openai.com/docs/guides/function-calling/function-calling-behavior?api-mode=chat#additional-configurations">what OpenAI does</a> with the option <code>tool_choice=required</code> and we could even impose which tool to call which is probably equivalent to the forced function option that OpenAI provides). Let’s add the tool call directly to the prompt:</p>
 <div id="d21ebcca-9fc8-4d23-bdbb-7295fcb51628" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-05T13:58:50.239544Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-05T13:58:50.238315Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-05T13:58:51.658604Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-05T13:58:51.657899Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-05T13:58:50.239484Z&quot;}}" data-execution_count="28">
 <details class="code-fold">
 <summary>Show the code</summary>
