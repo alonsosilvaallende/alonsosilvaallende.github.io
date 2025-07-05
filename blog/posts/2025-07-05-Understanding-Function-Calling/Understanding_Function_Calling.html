@@ -731,7 +731,8 @@ globalThis._qpyodideGetInstance = function() {
 
 
 
-<p>Language models take <strong>text</strong> as input and then predict which <strong>text</strong> should come next. Given that information, what does <em>function calling</em> even mean?</p>
+<p>Language models take <strong>text</strong> as input and predict which <strong>text</strong> should come next. Taking that into consideration, what does <em>function calling</em> even mean?</p>
+<p>In this post, I start by providing a basic example to motivate function calling, then I give a slightly more complex example by allowing a small language model to use Python. After that, I explain the <em>conversational response as a tool</em> trick. Finally, I explain how to do function calling in WebAssembly (optional but fun if you want to try function calling in the browser in this post itself).</p>
 <section id="basic-example" class="level2">
 <h2 class="anchored" data-anchor-id="basic-example">Basic example</h2>
 <p>Let’s start with a basic example. Imagine that we ask a language model to perform the multiplication of <code>1234567</code> times <code>8765432</code> whose result is:</p>
@@ -1247,6 +1248,7 @@ What's 1234567 times 8765432?&lt;|im_end|&gt;
 <p>We can execute the code:</p>
 <div id="qpyodide-insertion-location-7"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>Feel free to modify the code and/or prompts and run them in the browser!</p>
 
 
 </section>
