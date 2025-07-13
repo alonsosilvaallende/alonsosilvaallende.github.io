@@ -13,7 +13,7 @@
     "listing": "/blog/index.html",
     "items": [
       "/blog/posts/2025-07-14-A-Void-by-Georges-Perec/A_Void.html",
-      "/blog/posts/2025-07-12-Understanding-Logits-Processors/Understanding_Logits_Processors.html",
+      "/blog/posts/2025-07-13-Understanding-Logits-Processors/Understanding_Logits_Processors.html",
       "/blog/posts/2025-07-11-Understanding-Structured-Outputs/Understanding_Structured_Outputs.html",
       "/blog/posts/2025-07-05-Understanding-Function-Calling/Understanding_Function_Calling.html",
       "/blog/posts/2025-06-28-Understanding-Memory/Understanding_LLMs_Memory.html",
