@@ -748,7 +748,7 @@ globalThis._qpyodideGetInstance = function() {
 <h2 class="anchored" data-anchor-id="basic-example">Basic Example</h2>
 <p>Let’s start with a basic example to see an interesting application.</p>
 <p>Let’s download a small language model (1.7B parameters) and its tokenizer:</p>
-<div id="0eceb2ca-1f09-4f3f-bb88-5338d4ae6f35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-09T13:36:19.264993Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-09T13:36:19.264446Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-09T13:36:27.756140Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-09T13:36:27.755391Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-09T13:36:19.264944Z&quot;}}" data-execution_count="2">
+<div id="0eceb2ca-1f09-4f3f-bb88-5338d4ae6f35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-16T13:38:08.011731Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-16T13:38:08.011216Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-16T13:38:23.079190Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-16T13:38:23.078407Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-16T13:38:08.011686Z&quot;}}" data-execution_count="2">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoModelForCausalLM, AutoTokenizer, TextIteratorStreamer</span>
@@ -762,12 +762,32 @@ globalThis._qpyodideGetInstance = function() {
 </details>
 <div class="cell-output cell-output-display">
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id":"8246b21aeafc43e88dfe74fcdae6003f","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
+{"model_id":"3fd98c8031a74b078d996869b3b52be4","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id":"00e9d2816a004a1dba56bf16ee98eb27","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id":"f92bbf1de21d4148ac2f0e4550b26fb6","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id":"132bcc6f2a5145fc9b4586ef9f157cf3","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id":"a7d47db00f1d4c07827723a8e3de6f21","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
 </script>
 </div>
 </div>
 <p>We can describe a function (which we won’t implement) that extracts the city and the country of the text.</p>
-<div id="1651d559-db8d-4e19-b7cc-e47bfe212726" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-09T13:36:27.771906Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-09T13:36:27.771470Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-09T13:36:28.095086Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-09T13:36:28.094402Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-09T13:36:27.771872Z&quot;}}" data-execution_count="3">
+<div id="1651d559-db8d-4e19-b7cc-e47bfe212726" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-16T13:38:23.080205Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-16T13:38:23.079873Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-16T13:38:23.830005Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-16T13:38:23.829283Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-16T13:38:23.080187Z&quot;}}" data-execution_count="3">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pydantic <span class="im">import</span> BaseModel, Field</span>
@@ -824,7 +844,7 @@ globalThis._qpyodideGetInstance = function() {
 </div>
 </div>
 <p>We can provide the text <code>I live in the big apple</code> and the function description above. We obtain the following response:</p>
-<div id="6e2710e2-6e88-4368-bfe9-24da18445589" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-09T13:36:28.095861Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-09T13:36:28.095680Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-09T13:36:43.325913Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-09T13:36:43.325108Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-09T13:36:28.095833Z&quot;}}" data-execution_count="4">
+<div id="6e2710e2-6e88-4368-bfe9-24da18445589" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-16T13:38:23.831311Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-16T13:38:23.831150Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-16T13:38:38.826243Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-16T13:38:38.825507Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-16T13:38:23.831297Z&quot;}}" data-execution_count="4">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>user_input <span class="op">=</span> <span class="st">"I live in the big apple"</span></span>
@@ -890,7 +910,7 @@ Therefore, the correct call would be to city_extractor with city: "New York", st
 </div>
 </div>
 <p>Inside the <code>tool_call</code> xml tags, we get the information:</p>
-<div id="b09e95c1-ebb3-46cf-beca-aec4d3bcedef" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-09T13:41:53.830844Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-09T13:41:53.830228Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-09T13:41:53.838046Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-09T13:41:53.837041Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-09T13:41:53.830801Z&quot;}}" data-execution_count="22">
+<div id="b09e95c1-ebb3-46cf-beca-aec4d3bcedef" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-16T13:38:38.827059Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-16T13:38:38.826895Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-16T13:38:38.831484Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-16T13:38:38.830846Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-16T13:38:38.827045Z&quot;}}" data-execution_count="5">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>assistant_response_clean <span class="op">=</span> assistant_response.split(<span class="st">"&lt;tool_call&gt;"</span>)[<span class="op">-</span><span class="dv">1</span>].split(<span class="st">"&lt;/tool_call&gt;"</span>)[<span class="dv">0</span>]</span>
@@ -911,7 +931,7 @@ country: United States</code></pre>
 <section id="extractor" class="level2">
 <h2 class="anchored" data-anchor-id="extractor">Extractor</h2>
 <p>A slightly more complicated example but interesting could be to have a personal information extractor. The logic is quite similar to the previous example. We need to describe a function that requires as arguments the information we want to extract (<code>first_name</code>, <code>last_name</code>, <code>email</code>). Here is the description of a function that does that:</p>
-<div id="9fd87bf8-23ec-4fbd-ad31-01be5892feb8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-09T13:30:39.820593Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-09T13:30:39.819969Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-09T13:30:39.834785Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-09T13:30:39.833568Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-09T13:30:39.820546Z&quot;}}" data-execution_count="5">
+<div id="9fd87bf8-23ec-4fbd-ad31-01be5892feb8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-16T13:38:38.832175Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-16T13:38:38.832037Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-16T13:38:38.870475Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-16T13:38:38.869499Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-16T13:38:38.832162Z&quot;}}" data-execution_count="6">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> typing <span class="im">import</span> List</span>
@@ -995,7 +1015,7 @@ country: United States</code></pre>
 <p>“My name is John Doe and you can contact me at sales@example.com and she is Jane Doe and can be contacted at support@example.com”</p>
 </blockquote>
 <p>We can see that this small language model is able to extract the personal information from that text without any problem.</p>
-<div id="951313dc-37e6-4c24-82fa-b522cb72ea94" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-09T13:32:39.447985Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-09T13:32:39.447347Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-09T13:32:48.858542Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-09T13:32:48.857168Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-09T13:32:39.447943Z&quot;}}" data-execution_count="9">
+<div id="951313dc-37e6-4c24-82fa-b522cb72ea94" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-16T13:38:38.872081Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-16T13:38:38.871576Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-16T13:38:48.423671Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-16T13:38:48.422425Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-16T13:38:38.872042Z&quot;}}" data-execution_count="7">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>user_input <span class="op">=</span> <span class="st">"My name is John Doe and you can contact me at sales@example.com and she is Jane Doe and can be contacted at support@example.com"</span></span>
@@ -1025,7 +1045,7 @@ Double-checking the parameters: the function's properties are correct, and the e
 </div>
 </div>
 <p>Inside the <code>tool_call</code> xml tags, we get the information we wanted to extract:</p>
-<div id="14da5a2e-4fab-45db-9fca-81a51f8cad42" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-09T13:33:07.918233Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-09T13:33:07.917602Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-09T13:33:07.926474Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-09T13:33:07.925457Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-09T13:33:07.918191Z&quot;}}" data-execution_count="10">
+<div id="14da5a2e-4fab-45db-9fca-81a51f8cad42" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-16T13:38:48.425420Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-16T13:38:48.424888Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-16T13:38:48.432202Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-16T13:38:48.431300Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-16T13:38:48.425381Z&quot;}}" data-execution_count="8">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>assistant_response_clean <span class="op">=</span> assistant_response.split(<span class="st">"&lt;tool_call&gt;"</span>)[<span class="op">-</span><span class="dv">1</span>].split(<span class="st">"&lt;/tool_call&gt;"</span>)[<span class="dv">0</span>]</span>
@@ -1046,7 +1066,7 @@ First name: Jane, Last name: Doe, E-mail: support@example.com</code></pre>
 <p>Another example which is quite common for <code>structured outputs</code> is classification. Suppose we want to determine if an e-mail we received should be forwarded to the IT department or to the Sales department.</p>
 <p>Before language models, to do this task we would need to create a dataset with different emails and the labels at which they correspond to and then train a model to do the classification. Now, we just need to provide a succint description. That’s neat!</p>
 <p>We can describe a function that requires as arguments the information we want (<code>IT department</code> or <code>Sales department</code>). Here is the description of a function that does that:</p>
-<div id="a32a9fa6-2b1c-487b-8fcb-ef6046551dd7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-09T13:43:03.022461Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-09T13:43:03.021846Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-09T13:43:03.032608Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-09T13:43:03.031591Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-09T13:43:03.022420Z&quot;}}" data-execution_count="23">
+<div id="a32a9fa6-2b1c-487b-8fcb-ef6046551dd7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-16T13:38:48.434075Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-16T13:38:48.433294Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-16T13:38:48.474538Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-16T13:38:48.473621Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-16T13:38:48.434036Z&quot;}}" data-execution_count="9">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> typing <span class="im">import</span> Literal</span>
@@ -1098,7 +1118,7 @@ First name: Jane, Last name: Doe, E-mail: support@example.com</code></pre>
 <p>“I would like to have more information related to the new product.”</p>
 </blockquote>
 <p>This small language model is able to classify this text without any problem:</p>
-<div id="2a8a3609-50aa-412c-a2bb-90c71872f8c8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-09T13:46:58.115930Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-09T13:46:58.115316Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-09T13:47:02.500726Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-09T13:47:02.499979Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-09T13:46:58.115887Z&quot;}}" data-execution_count="31">
+<div id="2a8a3609-50aa-412c-a2bb-90c71872f8c8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-16T13:38:48.476109Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-16T13:38:48.475622Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-16T13:38:52.952555Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-16T13:38:52.951522Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-16T13:38:48.476060Z&quot;}}" data-execution_count="10">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>user_input <span class="op">=</span> <span class="st">"I would like to have more information related to the new product."</span></span>
@@ -1118,7 +1138,7 @@ Hmm, the user's request is about product information. Typically, Sales departmen
 </div>
 </div>
 <p>Inside the <code>tool_call</code> xml tags, we get the correct department:</p>
-<div id="9e928f69-c077-4b1f-acac-288b4f8b72a7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-09T13:47:04.939113Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-09T13:47:04.938649Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-09T13:47:04.944217Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-09T13:47:04.943481Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-09T13:47:04.939084Z&quot;}}" data-execution_count="32">
+<div id="9e928f69-c077-4b1f-acac-288b4f8b72a7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-16T13:38:52.954141Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-16T13:38:52.953624Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-16T13:38:52.959190Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-16T13:38:52.958512Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-16T13:38:52.954102Z&quot;}}" data-execution_count="11">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>assistant_response_clean <span class="op">=</span> assistant_response.split(<span class="st">"&lt;tool_call&gt;"</span>)[<span class="op">-</span><span class="dv">1</span>].split(<span class="st">"&lt;/tool_call&gt;"</span>)[<span class="dv">0</span>]</span>
@@ -1131,7 +1151,7 @@ Hmm, the user's request is about product information. Typically, Sales departmen
 </div>
 </div>
 <p>Let’s try another one:</p>
-<div id="b0cab0be-765a-46c4-a8f3-14acf5dbb894" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-09T13:44:07.267356Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-09T13:44:07.266741Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-09T13:44:15.354924Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-09T13:44:15.354212Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-09T13:44:07.267316Z&quot;}}" data-execution_count="25">
+<div id="b0cab0be-765a-46c4-a8f3-14acf5dbb894" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-16T13:38:52.960605Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-16T13:38:52.960094Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-16T13:39:01.067215Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-16T13:39:01.066219Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-16T13:38:52.960565Z&quot;}}" data-execution_count="12">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>user_input <span class="op">=</span> <span class="st">"I cannot exit Vim in my computer. Could you help me with that?"</span></span>
@@ -1155,7 +1175,7 @@ So, I should call the Classifier function with the team as "IT department" to ge
 </div>
 </div>
 <p>We get again the correct department:</p>
-<div id="8567fc6c-0d36-4f4c-a3e1-5bce541a2e0c" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-09T13:45:56.504489Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-09T13:45:56.504189Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-09T13:45:56.509612Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-09T13:45:56.508873Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-09T13:45:56.504471Z&quot;}}" data-execution_count="29">
+<div id="8567fc6c-0d36-4f4c-a3e1-5bce541a2e0c" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-16T13:39:01.071173Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-16T13:39:01.070549Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-16T13:39:01.077292Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-16T13:39:01.076318Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-16T13:39:01.071134Z&quot;}}" data-execution_count="13">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>assistant_response_clean <span class="op">=</span> assistant_response.split(<span class="st">"&lt;tool_call&gt;"</span>)[<span class="op">-</span><span class="dv">1</span>].split(<span class="st">"&lt;/tool_call&gt;"</span>)[<span class="dv">0</span>]</span>
@@ -1163,8 +1183,8 @@ So, I should call the Classifier function with the team as "IT department" to ge
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(assistant_response_json[<span class="st">'arguments'</span>][<span class="st">'team'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="29">
-<pre><code>'IT department'</code></pre>
+<div class="cell-output cell-output-stdout">
+<pre><code>IT department</code></pre>
 </div>
 </div>
 <p>In this example, we have seen only a simple classifier between two classes but the same code can be done with many more classes. Similarly, we can use a whole decision tree structure to classify the text and do different things in the leaf nodes of the decision tree (to minimize delay we could use asynchronous calls to the language model). We could determine to which department should the email be sent and for each department what’s the type of question the user is asking (e.g.&nbsp;for sales, to which product is it related to while for IT department, wich program is it related to).</p>

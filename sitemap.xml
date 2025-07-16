@@ -5,43 +5,31 @@
     <lastmod>2025-07-05T07:51:32.892Z</lastmod>
   </url>
   <url>
-    <loc>https://alonsosilvaallende.github.io/blog/posts/2025-07-14-A-Void-by-Georges-Perec/A_Void.html</loc>
-    <lastmod>2025-07-13T05:38:02.105Z</lastmod>
+    <loc>https://alonsosilvaallende.github.io/blog/posts/2025-07-16-Understanding-Logits-Processors/Understanding_Logits_Processors.html</loc>
+    <lastmod>2025-07-16T15:02:07.093Z</lastmod>
   </url>
   <url>
-    <loc>https://alonsosilvaallende.github.io/blog/posts/2025-07-13-Understanding-Logits-Processors/Understanding_Logits_Processors.html</loc>
-    <lastmod>2025-07-13T14:49:59.429Z</lastmod>
+    <loc>https://alonsosilvaallende.github.io/blog/posts/2023-04-21-Observatorio-de-sueldos-en-Chile/2023-04-21-Observatorio-de-sueldos-en-Chile.html</loc>
+    <lastmod>2025-07-05T07:51:32.624Z</lastmod>
   </url>
   <url>
     <loc>https://alonsosilvaallende.github.io/blog/posts/2025-07-11-Understanding-Structured-Outputs/Understanding_Structured_Outputs.html</loc>
-    <lastmod>2025-07-11T09:24:53.675Z</lastmod>
+    <lastmod>2025-07-16T13:39:35.069Z</lastmod>
   </url>
   <url>
-    <loc>https://alonsosilvaallende.github.io/blog/posts/2025-06-20-Understanding-Chat-Templates/UnderstandingChatTemplates.html</loc>
+    <loc>https://alonsosilvaallende.github.io/blog/posts/2025-07-30-Understanding-Structured-Generation (Draft)/Understanding_Structured_Generation.html</loc>
+    <lastmod>2025-07-16T15:09:25.425Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alonsosilvaallende.github.io/blog/posts/2025-06-28-Understanding-Memory/Understanding_LLMs_Memory.html</loc>
     <lastmod>2025-07-05T07:51:32.584Z</lastmod>
   </url>
   <url>
-    <loc>https://alonsosilvaallende.github.io/blog/posts/2024-04-23-Build_a_basic_widget_with_AnyWidget_in_a_Solara_app/2024-04-23-Build_a_basic_widget_with_AnyWidget_in_a_Solara_app.html</loc>
+    <loc>https://alonsosilvaallende.github.io/blog/index.html</loc>
     <lastmod>2025-07-05T07:51:32.580Z</lastmod>
   </url>
   <url>
-    <loc>https://alonsosilvaallende.github.io/publications.html</loc>
-    <lastmod>2025-07-05T07:51:32.892Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alonsosilvaallende.github.io/til/posts/2025-06-16-Jupyter_Quiz/JupyterQuiz.html</loc>
-    <lastmod>2025-07-05T07:51:32.896Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alonsosilvaallende.github.io/til/posts/2025-07-04-Chess/Chess.html</loc>
-    <lastmod>2025-07-05T07:51:32.900Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alonsosilvaallende.github.io/til/index.html</loc>
-    <lastmod>2025-07-05T07:51:32.892Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alonsosilvaallende.github.io/til/posts/2025-06-29-Quarto-Marimo/marimo.html</loc>
+    <loc>https://alonsosilvaallende.github.io/til/posts/2025-06-15-Embed_REPL/Embed_REPL.html</loc>
     <lastmod>2025-07-05T07:51:32.896Z</lastmod>
   </url>
   <url>
@@ -49,15 +37,31 @@
     <lastmod>2025-07-05T07:51:32.892Z</lastmod>
   </url>
   <url>
-    <loc>https://alonsosilvaallende.github.io/til/posts/2025-06-15-Embed_REPL/Embed_REPL.html</loc>
+    <loc>https://alonsosilvaallende.github.io/til/posts/2025-06-29-Quarto-Marimo/marimo.html</loc>
     <lastmod>2025-07-05T07:51:32.896Z</lastmod>
   </url>
   <url>
-    <loc>https://alonsosilvaallende.github.io/blog/index.html</loc>
+    <loc>https://alonsosilvaallende.github.io/til/index.html</loc>
+    <lastmod>2025-07-05T07:51:32.892Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alonsosilvaallende.github.io/til/posts/2025-07-04-Chess/Chess.html</loc>
+    <lastmod>2025-07-05T07:51:32.900Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alonsosilvaallende.github.io/til/posts/2025-06-16-Jupyter_Quiz/JupyterQuiz.html</loc>
+    <lastmod>2025-07-05T07:51:32.896Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alonsosilvaallende.github.io/publications.html</loc>
+    <lastmod>2025-07-05T07:51:32.892Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alonsosilvaallende.github.io/blog/posts/2024-04-23-Build_a_basic_widget_with_AnyWidget_in_a_Solara_app/2024-04-23-Build_a_basic_widget_with_AnyWidget_in_a_Solara_app.html</loc>
     <lastmod>2025-07-05T07:51:32.580Z</lastmod>
   </url>
   <url>
-    <loc>https://alonsosilvaallende.github.io/blog/posts/2025-06-28-Understanding-Memory/Understanding_LLMs_Memory.html</loc>
+    <loc>https://alonsosilvaallende.github.io/blog/posts/2025-06-20-Understanding-Chat-Templates/UnderstandingChatTemplates.html</loc>
     <lastmod>2025-07-05T07:51:32.584Z</lastmod>
   </url>
   <url>
@@ -69,11 +73,11 @@
     <lastmod>2025-07-13T14:52:31.433Z</lastmod>
   </url>
   <url>
-    <loc>https://alonsosilvaallende.github.io/blog/posts/2023-04-21-Observatorio-de-sueldos-en-Chile/2023-04-21-Observatorio-de-sueldos-en-Chile.html</loc>
-    <lastmod>2025-07-05T07:51:32.624Z</lastmod>
+    <loc>https://alonsosilvaallende.github.io/blog/posts/2025-07-23-A-Void-by-Georges-Perec (Draft)/A_Void.html</loc>
+    <lastmod>2025-07-16T15:07:08.833Z</lastmod>
   </url>
   <url>
     <loc>https://alonsosilvaallende.github.io/blog/posts/2025-07-05-Understanding-Function-Calling/Understanding_Function_Calling.html</loc>
-    <lastmod>2025-07-11T09:10:31.867Z</lastmod>
+    <lastmod>2025-07-16T13:34:39.501Z</lastmod>
   </url>
 </urlset>
