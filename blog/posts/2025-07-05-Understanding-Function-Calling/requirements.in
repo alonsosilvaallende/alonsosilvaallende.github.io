@@ -8,9 +8,5 @@ jupytext
 ipywidgets
 torch
 transformers
-accelerate
-peft
-protobuf
-huggingface_hub
 openai
 matplotlib
