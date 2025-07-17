@@ -9,7 +9,7 @@
 <meta name="author" content="Alonso Silva">
 <meta name="dcterms.date" content="2025-07-23">
 
-<title>A Void by George Perec (Draft) – Homepage</title>
+<title>Forcing a language model to not use the letter ‘e’ (Draft) – Homepage</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -348,7 +348,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">A Void by George Perec (Draft)</h1>
+      <div class="quarto-title-block"><div><h1 class="title">Forcing a language model to not use the letter ‘e’ (Draft)</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
                                 <div class="quarto-categories">
                 <div class="quarto-category">code</div>
                 <div class="quarto-category">analysis</div>
@@ -385,7 +385,13 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#a-void-by-georges-perec" id="toc-a-void-by-georges-perec" class="nav-link active" data-scroll-target="#a-void-by-georges-perec">A Void by <em>Georges Perec</em></a></li>
+  <li><a href="#forcing-a-language-model-to-not-use-the-letter-e" id="toc-forcing-a-language-model-to-not-use-the-letter-e" class="nav-link active" data-scroll-target="#forcing-a-language-model-to-not-use-the-letter-e">Forcing a language model to not use the letter ‘e’</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#the-challenge" id="toc-the-challenge" class="nav-link" data-scroll-target="#the-challenge">The Challenge</a></li>
+  <li><a href="#the-solution" id="toc-the-solution" class="nav-link" data-scroll-target="#the-solution">The Solution</a></li>
+  </ul></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a></li>
   </ul>
 </nav>
     </div>
@@ -397,120 +403,257 @@ window.Quarto = {
 
 
 
-<section id="a-void-by-georges-perec" class="level2">
-<h2 class="anchored" data-anchor-id="a-void-by-georges-perec">A Void by <em>Georges Perec</em></h2>
-<p>Georges Perec (1936-1982) was a French novelist. He wrote a <span class="math inline">\(300\)</span>-page novel <code>La disparition</code>, without using during the whole novel the letter <code>e</code> which is the most used vowel in French. The English translation <code>A Void</code> also kept the constraint of not using the letter <code>e</code>, while the Spanish translation <code>El Secuestro</code> is written without using the letter <code>a</code> (the most used vowel in Spanish).</p>
-<p>This type of writing is called a <code>lipogram</code> and it is a type of <code>constrained writing</code>. Writing a lipogram is a trivial task when avoiding uncommon letters (e.g Z, J, Q, or X), but it is much more challenging to avoid common letters like (e.g.&nbsp;E, T, or A) in the English language, as an author must omit many ordinary words.</p>
-<div id="8d35d890-5b01-4cd5-b4cf-66efc7f6be85" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-13T05:34:34.997878Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-13T05:34:34.997272Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-13T05:34:35.003225Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-13T05:34:35.002090Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-13T05:34:34.997832Z&quot;}}" data-execution_count="12">
+<section id="forcing-a-language-model-to-not-use-the-letter-e" class="level2">
+<h2 class="anchored" data-anchor-id="forcing-a-language-model-to-not-use-the-letter-e">Forcing a language model to not use the letter ‘e’</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Plaque_perec.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>Georges Perec (1936-1982) was a French novelist, famous among other things for writing a <span class="math inline">\(300\)</span>-page novel called « La disparition », without using during the whole novel the letter ‘e’ (the most used vowel in French). The English translation “A Void” also kept that constraint, while the Spanish translation “El Secuestro” is written without using the letter ‘a’ (the most used vowel in Spanish).</p>
+<p>This type of writing is called a <em>lipogram</em> and it is a type of constrained writing. Writing a lipogram is a trivial task when avoiding uncommon letters (for example, Z, J, Q, or X), but it is much more challenging to avoid common letters (for example, E, T, or A) since the author must omit many ordinary words <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p>In this post, we want to force a language model to not use the letter ‘e’ in its responses.</p>
+</section>
+<section id="the-challenge" class="level3">
+<h3 class="anchored" data-anchor-id="the-challenge">The Challenge</h3>
+<p>Let’s first see that this is a difficult task for a language model.</p>
+<p>First, let’s download a small language model and its tokenizer.</p>
+<div id="9f6c9033-2ee1-4f46-97e7-b8c2e68c734a" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-17T15:32:36.006467Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-17T15:32:36.005797Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-17T15:32:42.967899Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-17T15:32:42.966965Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-17T15:32:36.006427Z&quot;}}" data-execution_count="2">
+<details class="code-fold">
+<summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb1" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> typing <span class="im">import</span> List</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers.generation <span class="im">import</span> LogitsProcessor</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> threading <span class="im">import</span> Thread</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers.generation <span class="im">import</span> LogitsProcessor</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoModelForCausalLM, AutoTokenizer, TextIteratorStreamer</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers.generation <span class="im">import</span> LogitsProcessor</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> Markdown</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>model_id <span class="op">=</span> <span class="st">"Qwen/Qwen3-0.6B"</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModelForCausalLM.from_pretrained(</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    model_id, cache_dir<span class="op">=</span><span class="st">"/big_storage/llms/hf_models/"</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>).to(<span class="st">"cuda"</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>tokenizer <span class="op">=</span> AutoTokenizer.from_pretrained(model_id)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>streamer <span class="op">=</span> TextIteratorStreamer(tokenizer, skip_prompt<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
-<div id="9aa8d4cc-e546-4ce9-b074-d30135229b90" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-13T05:34:35.987205Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-13T05:34:35.986612Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-13T05:34:42.820536Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-13T05:34:42.819636Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-13T05:34:35.987164Z&quot;}}" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb2" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> AutoModelForCausalLM, AutoTokenizer, TextIteratorStreamer</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers.generation <span class="im">import</span> LogitsProcessor</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>model_id <span class="op">=</span> <span class="st">"Qwen/Qwen3-0.6B"</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>tokenizer <span class="op">=</span> AutoTokenizer.from_pretrained(model_id)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> AutoModelForCausalLM.from_pretrained(</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    model_id, cache_dir<span class="op">=</span><span class="st">"/big_storage/llms/hf_models/"</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>).to(<span class="st">"cuda"</span>)</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>streamer <span class="op">=</span> TextIteratorStreamer(tokenizer, skip_prompt<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="6d6e2c82-a8d9-41df-9025-a11da6355d4a" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-13T05:34:46.013881Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-13T05:34:46.012987Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-13T05:34:46.025848Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-13T05:34:46.024637Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-13T05:34:46.013834Z&quot;}}" data-execution_count="14">
-<div class="sourceCode cell-code" id="cb3" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> GeorgePerecLogitsProcessor(LogitsProcessor):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, min_length: <span class="bu">int</span>, eos_token_id: List[<span class="bu">int</span>], forbidden_tokens: List[<span class="bu">int</span>], device: <span class="bu">str</span> <span class="op">=</span> <span class="st">"cuda"</span>):</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.min_length <span class="op">=</span> min_length</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.eos_token_id <span class="op">=</span> eos_token_id</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.forbidden_tokens <span class="op">=</span> forbidden_tokens</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.prompt_length_to_skip <span class="op">=</span> <span class="va">None</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__call__</span>(<span class="va">self</span>, input_ids: torch.LongTensor, scores: torch.FloatTensor) <span class="op">-&gt;</span> torch.FloatTensor:</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        first_time <span class="op">=</span> <span class="va">self</span>.prompt_length_to_skip <span class="kw">is</span> <span class="va">None</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> first_time:</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.prompt_length_to_skip <span class="op">=</span> input_ids.shape[<span class="op">-</span><span class="dv">1</span>]</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>        scores_processed <span class="op">=</span> scores.clone()</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>        token_count <span class="op">=</span> input_ids.shape[<span class="op">-</span><span class="dv">1</span>] <span class="op">-</span> <span class="va">self</span>.prompt_length_to_skip</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> token_count <span class="op">&lt;</span> <span class="va">self</span>.min_length:</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> eos_token_id <span class="kw">in</span> <span class="va">self</span>.eos_token_id:</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>                scores_processed[<span class="dv">0</span>][<span class="va">self</span>.eos_token_id] <span class="op">=</span> <span class="bu">float</span>(<span class="st">'-inf'</span>)</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>            token_chosen_id <span class="op">=</span> np.argmax(scores_processed.cpu())</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>            </span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"token count: </span><span class="sc">{</span>token_count<span class="sc">}</span><span class="ss">, token: </span><span class="sc">{</span>token_chosen_id<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>tokenizer<span class="sc">.</span>decode([token_chosen_id])<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>        vocab_tensor <span class="op">=</span> torch.arange(scores.shape[<span class="op">-</span><span class="dv">1</span>], device<span class="op">=</span>scores.device)</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>        forbidden_tokens <span class="op">=</span> torch.tensor(<span class="va">self</span>.forbidden_tokens, device<span class="op">=</span>scores.device)</span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(forbidden_tokens)</span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>        eos_token_mask <span class="op">=</span> torch.isin(vocab_tensor, forbidden_tokens)</span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(eos_token_mask)</span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>        scores_processed <span class="op">=</span> torch.where(eos_token_mask, <span class="bu">float</span>(<span class="st">'-inf'</span>), scores)</span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>        <span class="co"># for token in self.forbidden_tokens:</span></span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>        <span class="co">#     scores_processed[0][token] = float('-inf')</span></span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> scores_processed</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="5c5f7cc8-02c0-4f50-9934-905089bca003" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-13T05:34:46.371506Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-13T05:34:46.370891Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-13T05:34:47.451217Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-13T05:34:47.450298Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-13T05:34:46.371464Z&quot;}}" data-execution_count="15">
-<div class="sourceCode cell-code" id="cb4" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>tokens_containing_letter_e <span class="op">=</span> []</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> token <span class="kw">in</span> <span class="bu">range</span>(tokenizer.vocab_size):</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">"e"</span> <span class="kw">in</span> tokenizer.decode(token) <span class="kw">or</span> <span class="st">"E"</span> <span class="kw">in</span> tokenizer.decode(token) <span class="kw">or</span> <span class="st">'е'</span> <span class="kw">in</span> tokenizer.decode(token):</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        tokens_containing_letter_e.append(token)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(tokens_containing_letter_e)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="15">
-<pre data-code-line-numbers=""><code>48686</code></pre>
-</div>
-</div>
-<div id="3e6c25ea-b971-43b2-ab3f-96af9d2be45a" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-13T05:34:47.452373Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-13T05:34:47.452171Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-13T05:34:47.456876Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-13T05:34:47.455687Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-13T05:34:47.452357Z&quot;}}" data-execution_count="16">
-<div class="sourceCode cell-code" id="cb6" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>logits_processors <span class="op">=</span> [</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    GeorgePerecLogitsProcessor(</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>        min_length<span class="op">=</span><span class="dv">20</span>,</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>        eos_token_id<span class="op">=</span>[tokenizer.eos_token_id, tokenizer.pad_token_id],</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        forbidden_tokens<span class="op">=</span>tokens_containing_letter_e,</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="5dc911c3-814b-4b7d-b9ec-22f12ff7e131" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-13T05:35:30.214097Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-13T05:35:30.213479Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-13T05:35:30.222560Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-13T05:35:30.221575Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-13T05:35:30.214054Z&quot;}}" data-execution_count="20">
-<div class="sourceCode cell-code" id="cb7" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>[tokenizer.decode(token) <span class="cf">for</span> token <span class="kw">in</span> tokens_containing_letter_e[:<span class="dv">20</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="20">
-<pre data-code-line-numbers=""><code>['E',
- 'e',
- 'er',
- 're',
- 'en',
- 'le',
- ' the',
- 'es',
- 'ed',
- 'et',
- 'el',
- 'ent',
- ' re',
- 'se',
- 'ex',
- 'em',
- 'ce',
- 'ate',
- 'ue',
- 'ew']</code></pre>
+<p>Let’s ask the following:</p>
+<blockquote class="blockquote">
+<p>Tell me a short story without using the letter ‘e’</p>
+</blockquote>
+<p>Here is the language model’s response:</p>
+<div id="4ff4cfc0-ec97-4d2d-88a4-499ce506b510" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-17T15:32:42.968837Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-17T15:32:42.968520Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-17T15:32:45.624569Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-17T15:32:45.623835Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-17T15:32:42.968822Z&quot;}}" data-execution_count="3">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb2" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>user_input <span class="op">=</span> <span class="st">"Tell me a short story without using the letter 'e'"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> generate_response(user_input, logits_processor<span class="op">=</span>[], enable_thinking<span class="op">=</span><span class="va">False</span>):</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    messages <span class="op">=</span> [</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: user_input},</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    prompt <span class="op">=</span> tokenizer.apply_chat_template(</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        messages,</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        tokenize<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        add_generation_prompt<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        enable_thinking<span class="op">=</span>enable_thinking,</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    model_inputs <span class="op">=</span> tokenizer(prompt, return_tensors<span class="op">=</span><span class="st">"pt"</span>).to(<span class="st">"cuda"</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    prompt_length <span class="op">=</span> model_inputs[<span class="st">'input_ids'</span>].shape[<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    generation_kwargs <span class="op">=</span> <span class="bu">dict</span>(</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>        model_inputs,</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        streamer<span class="op">=</span>streamer,</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>        logits_processor<span class="op">=</span>logits_processor,</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>        max_new_tokens<span class="op">=</span><span class="dv">4</span> <span class="op">*</span> <span class="dv">1024</span>,</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>        do_sample<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>        temperature<span class="op">=</span><span class="fl">1.0</span>,</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>        top_p<span class="op">=</span><span class="fl">1.0</span>,</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>        top_k<span class="op">=</span><span class="dv">50</span>,</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    thread <span class="op">=</span> Thread(target<span class="op">=</span>model.generate, kwargs<span class="op">=</span>generation_kwargs)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    thread.start()</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    assistant_response <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> chunk <span class="kw">in</span> streamer:</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>        assistant_response <span class="op">+=</span> chunk</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>        <span class="co"># print(chunk, end="")</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>    clean_assistant_response <span class="op">=</span> assistant_response.split(<span class="st">"&lt;|im_end|&gt;"</span>)[<span class="dv">0</span>]</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    thread.join()</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> clean_assistant_response</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> display, Markdown</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> callout(text, kind<span class="op">=</span><span class="st">"info"</span>):</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>    colors <span class="op">=</span> {</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>        <span class="st">"info"</span>: (<span class="st">"#D1ECF1"</span>, <span class="st">"#0C5460"</span>),</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>        <span class="st">"warning"</span>: (<span class="st">"#FFF3CD"</span>, <span class="st">"#856404"</span>),</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>        <span class="st">"success"</span>: (<span class="st">"#D4EDDA"</span>, <span class="st">"#155724"</span>),</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>        <span class="st">"danger"</span>: (<span class="st">"#F8D7DA"</span>, <span class="st">"#721C24"</span>),</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>    bg, fg <span class="op">=</span> colors.get(kind, colors[<span class="st">"info"</span>])</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>    md <span class="op">=</span> <span class="ss">f"""</span></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="ss">&lt;div style="</span></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="ss">    background-color: </span><span class="sc">{</span>bg<span class="sc">}</span><span class="ss">;</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="ss">    color: </span><span class="sc">{</span>fg<span class="sc">}</span><span class="ss">;</span></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="ss">    border-left: 4px solid </span><span class="sc">{</span>fg<span class="sc">}</span><span class="ss">;</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="ss">    padding: 8px 12px;</span></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="ss">    border-radius: 4px;"&gt;</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="sc">{</span>text<span class="sc">}</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="ss">&lt;/div&gt;</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="ss">"""</span></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>    display(Markdown(md))</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>assistant_response <span class="op">=</span> generate_response(user_input)</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>callout(assistant_response)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display cell-output-markdown">
+<div style="
+    background-color: #D1ECF1;
+    color: #0C5460;
+    border-left: 4px solid #0C5460;
+    padding: 8px 12px;
+    border-radius: 4px;">
+<p>In a quiet village, a young girl named Lily found a hidden book tucked under a tree. She loved reading and spent her days there, surrounded by stories that brought her joy. One day, she discovered a secret message hidden in the book: <em>“The world is full of wonders, and I am here to share them.”</em> With a smile, she returned to her village, carrying the message with her.</p>
 </div>
 </div>
-<div id="7207dafb-ae31-4c75-a7a7-587b3a4fdf2f" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-13T05:35:47.092615Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-13T05:35:47.091686Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-13T05:35:47.097368Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-13T05:35:47.096395Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-13T05:35:47.092572Z&quot;}}" data-execution_count="21">
-<div class="sourceCode cell-code" id="cb9" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>special_tokens <span class="op">=</span> tokenizer.special_tokens_map</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="ec464120-b663-4ff7-baf3-c95708170bf6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-13T05:36:52.535325Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-13T05:36:52.534569Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-13T05:36:52.541050Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-13T05:36:52.540012Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-13T05:36:52.535280Z&quot;}}" data-execution_count="22">
-<div class="sourceCode cell-code" id="cb10" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>flattened_list <span class="op">=</span> []</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> special_tokens.values():</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">isinstance</span>(item, <span class="bu">list</span>):</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>        flattened_list.extend(item)</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>        flattened_list.append(item)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>A complete failure!!!</p>
+<p>Now, this is a small language model, so let’s see GPT-4o response:</p>
+<p><img src="lipogram_chatgpt.jpg" class="img-fluid"></p>
+<p>Another failure!!!</p>
+<p>Here is the <a href="https://chatgpt.com/share/68790887-6d9c-800a-a928-ff882e6cb198">link to that conversation</a>.</p>
+</section>
+<section id="the-solution" class="level3">
+<h3 class="anchored" data-anchor-id="the-solution">The Solution</h3>
+<p>In my <a href="https://alonsosilvaallende.github.io/blog/posts/2025-07-16-Understanding-Logits-Processors/Understanding_Logits_Processors.html">previous post</a>, I discussed about logits processors and how they can be used to force language models to do all sorts of things. Well, we are going to use a logits processor to accomplish this task.</p>
+<p>Let’s see that ‘e’ is indeed one of the most used vowels. First, for each vowel we find all the tokens that contain that vowel.</p>
+<div id="42fe0783-c4a2-409b-9a9c-0e3934525b64" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-17T15:32:45.625720Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-17T15:32:45.625434Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-17T15:32:49.623934Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-17T15:32:49.623194Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-17T15:32:45.625680Z&quot;}}" data-execution_count="4">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb3" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>list_of_vowels <span class="op">=</span> [<span class="st">"a"</span>, <span class="st">"e"</span>, <span class="st">"i"</span>, <span class="st">"o"</span>, <span class="st">"u"</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>tokens_per_vowel <span class="op">=</span> <span class="bu">dict</span>()</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> vowel <span class="kw">in</span> list_of_vowels:</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    tokens_containing_a_given_vowel <span class="op">=</span> []</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> token_id <span class="kw">in</span> <span class="bu">range</span>(tokenizer.vocab_size):</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> vowel <span class="kw">in</span> tokenizer.decode(token_id) <span class="kw">or</span> vowel.upper() <span class="kw">in</span> tokenizer.decode(token_id):</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>            tokens_containing_a_given_vowel.append(token_id)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    tokens_per_vowel[vowel] <span class="op">=</span> tokens_containing_a_given_vowel</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
-<div id="88bf96f3-e620-4b8f-9aea-c5e024626a13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-13T05:37:14.891660Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-13T05:37:14.891001Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-13T05:37:14.897806Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-13T05:37:14.896807Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-13T05:37:14.891617Z&quot;}}" data-execution_count="23">
-<div class="sourceCode cell-code" id="cb11" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>special_token_ids <span class="op">=</span> {token: tokenizer.convert_tokens_to_ids(token) <span class="cf">for</span> token <span class="kw">in</span> flattened_list}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Let’s verify the code is working:</p>
+<div id="4e25954a-72e3-4327-a48b-1045c6a9da18" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-17T15:45:11.153761Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-17T15:45:11.153146Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-17T15:45:11.160829Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-17T15:45:11.159789Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-17T15:45:11.153716Z&quot;}}" data-execution_count="12">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb4" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> vowel <span class="kw">in</span> list_of_vowels:</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Tokens that contain letter </span><span class="sc">{</span>vowel<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span><span class="st">" "</span><span class="sc">.</span>join(tokenizer.convert_ids_to_tokens(tokens_per_vowel[vowel][:<span class="dv">15</span>]))<span class="sc">}</span><span class="ss">..."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre data-code-line-numbers=""><code>Tokens that contain letter a: A a Ġa at an ar al as am Ġand ad ate ag ay ĠA...
+Tokens that contain letter e: E e er re en le Ġthe es ed et el ent Ġre se ex...
+Tokens that contain letter i: I i in it is ing ion ic Ġin id im il if ig iv...
+Tokens that contain letter o: O o on or ou ion Ġo ro Ġto Ġof om ol od ot ow...
+Tokens that contain letter u: U u ou ur ut us un ul ue um ub urn out turn our...</code></pre>
 </div>
+</div>
+<p>Let’s see how many tokens per vowel are there in this tokenizer:</p>
+<div id="f33dc0fe-5d04-4123-8591-88fe76582410" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-17T15:47:18.792864Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-17T15:47:18.792144Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-17T15:47:18.800650Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-17T15:47:18.799581Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-17T15:47:18.792814Z&quot;}}" data-execution_count="14">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb6" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Total number of vocab tokens: </span><span class="sc">{</span>tokenizer<span class="sc">.</span>vocab_size<span class="sc">:,}</span><span class="ss">"</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> vowel <span class="kw">in</span> list_of_vowels:</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"There are </span><span class="sc">{</span><span class="bu">len</span>(tokens_per_vowel[vowel])<span class="sc">:,}</span><span class="ss"> tokens that contain vowel '</span><span class="sc">{</span>vowel<span class="sc">}</span><span class="ss">' or </span><span class="sc">{</span><span class="bu">len</span>(tokens_per_vowel[vowel])<span class="op">/</span>tokenizer<span class="sc">.</span>vocab_size<span class="sc">:.2%}</span><span class="ss"> of tokens"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre data-code-line-numbers=""><code>Total number of vocab tokens: 151,643
+There are 36,369 tokens that contain vowel 'a' or 23.98% of tokens
+There are 47,405 tokens that contain vowel 'e' or 31.26% of tokens
+There are 34,645 tokens that contain vowel 'i' or 22.85% of tokens
+There are 29,766 tokens that contain vowel 'o' or 19.63% of tokens
+There are 16,338 tokens that contain vowel 'u' or 10.77% of tokens</code></pre>
+</div>
+</div>
+<p>OK, so the letter ‘e’ is indeed a quite used vowel.</p>
+<p>We want to create a logits processor that will forbid all the tokens that contain the letter ‘e’.</p>
+<p>We first create a logits processor that will receive a list of forbidden tokens and that it will lower the scores of the forbiden tokens to minus infinite as follows:</p>
+<div id="ab9cc740-5212-4a37-a668-3275d5d4077a" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-17T15:32:49.663298Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-17T15:32:49.662795Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-17T15:32:49.687161Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-17T15:32:49.686203Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-17T15:32:49.663259Z&quot;}}" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb8" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> GeorgePerecLogitsProcessor(LogitsProcessor):</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, forbidden_tokens: List[<span class="bu">int</span>]):</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.forbidden_tokens <span class="op">=</span> forbidden_tokens</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__call__</span>(</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>, input_ids: torch.LongTensor, scores: torch.FloatTensor</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    ) <span class="op">-&gt;</span> torch.FloatTensor:</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>        scores_processed <span class="op">=</span> scores.clone()</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>        vocab_tensor <span class="op">=</span> torch.arange(scores.shape[<span class="op">-</span><span class="dv">1</span>], device<span class="op">=</span>scores.device)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>        forbidden_tokens <span class="op">=</span> torch.tensor(<span class="va">self</span>.forbidden_tokens, device<span class="op">=</span>scores.device)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>        forbidden_tokens_mask <span class="op">=</span> torch.isin(vocab_tensor, forbidden_tokens)</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>        scores_processed <span class="op">=</span> torch.where(forbidden_tokens_mask, <span class="op">-</span>torch.inf, scores)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> scores_processed</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We can instantiate the logits processor by putting all the tokens that contain the letter ‘e’ as forbidden tokens:</p>
+<div id="3e6c25ea-b971-43b2-ab3f-96af9d2be45a" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-17T15:32:49.689410Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-17T15:32:49.688527Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-17T15:32:49.711568Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-17T15:32:49.710572Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-17T15:32:49.689370Z&quot;}}" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb9" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>logits_processors <span class="op">=</span> [</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    GeorgePerecLogitsProcessor(</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>        forbidden_tokens<span class="op">=</span>tokens_per_vowel[<span class="st">"e"</span>],</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We can ask the language model the following:</p>
+<blockquote class="blockquote">
+<p>Tell me a story about pirates and adventures</p>
+</blockquote>
+<p>Here is the language model’s response</p>
+<div id="8cd01d02-4eee-410d-b08c-8b65d2001b10" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2025-07-17T15:32:49.713481Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-17T15:32:49.712688Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-17T15:33:03.043619Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-17T15:33:03.042628Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-17T15:32:49.713439Z&quot;}}" data-execution_count="9">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb10" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>user_input <span class="op">=</span> <span class="st">"Tell me a story about pirates and adventures"</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>assistant_response <span class="op">=</span> generate_response(user_input, logits_processor<span class="op">=</span>logits_processors)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>callout(assistant_response)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display cell-output-markdown">
+<div style="
+    background-color: #D1ECF1;
+    color: #0C5460;
+    border-left: 4px solid #0C5460;
+    padding: 8px 12px;
+    border-radius: 4px;">
+<p><strong>A Story of Shadows and Stars</strong></p>
+<p>In a distant land far from civilization, known as <em>Varkhara</em>, a small island shrouding in mist and fog, lay a kingdom of sailors and warriors. It was said that this land was born from a storm, and that its only way to find its way was to sail through its own storms.</p>
+<p>Long ago, a young man, <strong>Karan</strong>, was born to a family of fish and sailors. His family had always known that to find a path to glory, a man must sail through storms. So, at a young and curious mind, Karan took his first sail. With a small boat and a compass, and a spirit of daring, Karan rowdily rowing his way through a storm.</p>
+<p>But as Karan rowdily rowing his way through a storm, a shadow looms on his path. A dark, old man, <strong>Malik</strong>, a long-forging captain, had always known that to sail through storms, a man must not only row but also fight. Malik had always taught Karan that storms could not only bring rain but also bring warriors.</p>
+<p>With Malik’s wisdom and Karan’s daring spirit, Karan and Malik soon found a way to sail through storms. With a small boat and a compass, and a spirit of daring, Karan rowdily rowing his way through a storm.</p>
+<p>But as Karan rowdily rowing his way through a storm, a shadow looms on his path. A dark, old man, <strong>Malik</strong>, a long-forging captain, had always known that to sail through storms, a man must not only row but also fight. Malik had always taught Karan that storms could not only bring rain but also bring warriors.</p>
+<p>With Malik’s wisdom and Karan’s daring spirit, Karan and Malik soon found a way to sail through storms. With a small boat and a compass, and a spirit of daring, Karan rowdily rowing his way through a storm.</p>
+<p>And so, Karan and Malik, two sailors from Varkhara, found a way to sail through storms, not just through storms, but through <em>war</em>.</p>
+</div>
+</div>
+</div>
+<p>Perfect!</p>
+</section>
+</section>
+<section id="conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions">Conclusions</h2>
+<p>We successfully forced the language model to not use the letter ‘e’.</p>
+<p>Here is an app to talk to a language model like this one yourself:</p>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>https://en.wikipedia.org/wiki/Lipogram<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
