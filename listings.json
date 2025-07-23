@@ -1,9 +1,21 @@
 [
   {
+    "listing": "/til/index.html",
+    "items": [
+      "/til/posts/2025-07-17-Notebook-Cells/notebook_cells.html",
+      "/til/posts/2025-07-04-Chess/Chess.html",
+      "/til/posts/2025-06-29-Quarto-Marimo/marimo.html",
+      "/til/posts/2025-06-16-Jupyter_Quiz/JupyterQuiz.html",
+      "/til/posts/2025-06-15-Embed_REPL/Embed_REPL.html",
+      "/til/posts/2024-11-21-Datasette/Datasette.html"
+    ]
+  },
+  {
     "listing": "/blog/index.html",
     "items": [
-      "/blog/posts/2025-07-30-Understanding-Structured-Generation (Draft)/Understanding_Structured_Generation.html",
-      "/blog/posts/2025-07-23-Force_a_language_model_not_use_the_letter_e/A_Void.html",
+      "/blog/posts/2025-07-30-Understanding-Structured-Generation/Untitled.html",
+      "/blog/posts/2025-07-30-Understanding-Structured-Generation/Understanding_Structured_Generation.html",
+      "/blog/posts/2025-07-23-Force_a_language_model_not_to_use_the_letter_e/A_Void.html",
       "/blog/posts/2025-07-16-Understanding-Logits-Processors/Understanding_Logits_Processors.html",
       "/blog/posts/2025-07-11-Understanding-Structured-Outputs/Understanding_Structured_Outputs.html",
       "/blog/posts/2025-07-05-Understanding-Function-Calling/Understanding_Function_Calling.html",
@@ -13,17 +25,6 @@
       "/blog/posts/2024-04-23-Build_a_basic_widget_with_AnyWidget_in_a_Solara_app/2024-04-23-Build_a_basic_widget_with_AnyWidget_in_a_Solara_app.html",
       "/blog/posts/2024-04-19-Build_a_basic_LLM_chat_app_with_Solara/2024-04-19-Build_a_basic_LLM_chat_app_with_Solara.html",
       "/blog/posts/2023-04-21-Observatorio-de-sueldos-en-Chile/2023-04-21-Observatorio-de-sueldos-en-Chile.html"
-    ]
-  },
-  {
-    "listing": "/til/index.html",
-    "items": [
-      "/til/posts/2025-07-17-Notebook-Cells/notebook_cells.html",
-      "/til/posts/2025-07-04-Chess/Chess.html",
-      "/til/posts/2025-06-29-Quarto-Marimo/marimo.html",
-      "/til/posts/2025-06-16-Jupyter_Quiz/JupyterQuiz.html",
-      "/til/posts/2025-06-15-Embed_REPL/Embed_REPL.html",
-      "/til/posts/2024-11-21-Datasette/Datasette.html"
     ]
   }
 ]
