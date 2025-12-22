@@ -1,6 +1,7 @@
 /.quarto/
 /_site/
 /_freeze/
+.ipynb_checkpoints/
 /til/posts/2024-11-21-Datasette/Datasette.ipynb
 /til/posts/2025-06-16-Jupyter_Quiz/.ipynb_checkpoints/
 til/posts/2025-06-15-Embed_REPL/.ipynb_checkpoints/
