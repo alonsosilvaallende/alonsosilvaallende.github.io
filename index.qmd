@@ -11,8 +11,17 @@ I received my Ph.D. in Physics from the [École Supérieure d'Électricité (Sup
 
 ## Recent talks
 
+- [Litelines: Processors for Language Models](https://github.com/alonsosilvaallende/litelines/), A. Silva, [PyData Paris](https://pydata.org/paris2025/), September 30-October 1, 2025 [[slides](https://alonsosilvaallende.github.io/automata-guided-generation/)] [[code](https://github.com/alonsosilvaallende/automata-guided-generation/)]
+{{< video https://www.youtube.com/embed/9YuSCd2Nn80 aspect-ratio="4x3" width="400" >}}
+
+- [Structured Outputs or Structured Generation: Why not both?](https://sessionize.com/s/alonso-silva/respuestas-estructuradas-o-generaciones-estructura/157332), A. Silva, [PyCon Chile](https://www.pycon.cl/), November 8-9, 2025 [[slides](https://alonsosilvaallende.github.io/2025-PyCon-Chile/)] [[code](https://github.com/alonsosilvaallende/2025-PyCon-Chile/)]
+{{< video https://www.youtube.com/embed/88XOn90wDdk aspect-ratio="4x3" width="400" >}}
+
 - [Building Knowledge Graph-Based Agents with Structured Text Generation and Open-Weights Models](https://global2024.pydata.org/cfp/talk/8QNSYP/), A. Silva, [PyData Global](https://pydata.org/global2024), December 3-5, 2024 [[slides](https://alonsosilvaallende.github.io/2024-PyData-Global/)] [[code](https://github.com/alonsosilvaallende/2024-PyData-Global)]
 {{< video https://www.youtube.com/watch?v=94yuQKoDKkE aspect-ratio="4x3" width="400" >}}
+
+- [Improve (almost) any retrieval augmented generation (RAG) with hybrid RAG](https://sessionize.com/s/alonso-silva/mejora-casi-cualquier-generacion-aumentada-con-rec/144731), A. Silva, [PyCon Chile](https://www.pycon.cl/), November 30-December 1, 2024 [[slides](https://alonsosilvaallende.github.io/2024-PyData-Paris/)] [[code](https://github.com/alonsosilvaallende/2024-PyData-Paris/)]
+{{< video https://www.youtube.com/embed/EPu3RNa6dBU aspect-ratio="4x3" width="400" >}}
 
 - [Enhancing RAG-based apps by constructing and leveraging knowledge graphs with open-weights LLMs](https://pretalx.com/pydata-paris-2024/talk/AZNEHE/), A. Silva, PyData Paris, September 25-26, 2024 [[slides](https://alonsosilvaallende.github.io/2024-PyData-Paris/)] [[code](https://github.com/alonsosilvaallende/2024-PyData-Paris/)]
 {{< video https://www.youtube.com/embed/sjprfQw5TJw aspect-ratio="4x3" width="400" >}}
@@ -38,4 +47,3 @@ I received my Ph.D. in Physics from the [École Supérieure d'Électricité (Sup
 
 - **Keynote:** "Improving Retrieval Augmented Generation (RAG) with Hybrid RAG," A. Silva, [Summer school in computational intelligence (EVIC)](https://www.evic.cl/), December 11-13, 2024.
 - **Keynote:** "Improving Retrieval Augmented Generation (RAG) with Hybrid RAG," A. Silva, [IADevs](https://www.iadevs.cl/), Dec 9, 2024.
-- "Improve (almost) any retrieval augmented generation (RAG) with hybrid RAG," A. Silva, [PyCon Chile](https://www.pycon.cl/), November 30-December 1, 2024.
