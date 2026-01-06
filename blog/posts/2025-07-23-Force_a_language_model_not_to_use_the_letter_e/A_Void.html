@@ -260,7 +260,7 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="the-challenge">The Challenge</h3>
 <p>Let’s first see that this is a difficult task for a language model.</p>
 <p>First, let’s download a small language model and its tokenizer.</p>
-<div id="9f6c9033-2ee1-4f46-97e7-b8c2e68c734a" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-07-18T10:18:48.344762Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-18T10:18:48.344208Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-18T10:18:55.221251Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-18T10:18:55.220476Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-18T10:18:48.344714Z&quot;}" data-execution_count="2">
+<div id="9f6c9033-2ee1-4f46-97e7-b8c2e68c734a" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-01-05T13:15:23.723658Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-01-05T13:15:23.722627Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-01-05T13:15:35.137253Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-01-05T13:15:35.135983Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2026-01-05T13:15:23.723607Z&quot;}" data-execution_count="2">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb1" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
@@ -293,7 +293,7 @@ window.Quarto = {
 <p>Tell me a short story without using the letter ‘e’</p>
 </blockquote>
 <p>Here is the language model’s response:</p>
-<div id="4ff4cfc0-ec97-4d2d-88a4-499ce506b510" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-07-18T10:18:55.222200Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-18T10:18:55.221890Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-18T10:18:57.847452Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-18T10:18:57.846407Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-18T10:18:55.222185Z&quot;}" data-execution_count="3">
+<div id="4ff4cfc0-ec97-4d2d-88a4-499ce506b510" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-01-05T13:15:36.916930Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-01-05T13:15:36.916052Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-01-05T13:15:39.754449Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-01-05T13:15:39.753736Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2026-01-05T13:15:36.916880Z&quot;}" data-execution_count="3">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb2" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>user_input <span class="op">=</span> <span class="st">"Tell me a short story without using the letter 'e'"</span></span>
@@ -383,7 +383,7 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="the-solution">The Solution</h3>
 <p>In my <a href="https://alonsosilvaallende.github.io/blog/posts/2025-07-16-Understanding-Logits-Processors/Understanding_Logits_Processors.html">previous post</a>, I discussed about logits processors and how they can be used to force language models to do all sorts of things. Well, we are going to use a logits processor to accomplish this task.</p>
 <p>Let’s see that ‘e’ is indeed one of the most used vowels. First, for each vowel we find all the tokens that contain that vowel.</p>
-<div id="df49ecc4-2a79-4473-b3d8-5c6d3836f734" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-07-18T10:20:31.853846Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-18T10:20:31.853399Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-18T10:20:44.471542Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-18T10:20:44.470824Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-18T10:20:31.853821Z&quot;}" data-execution_count="4">
+<div id="df49ecc4-2a79-4473-b3d8-5c6d3836f734" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-01-05T13:15:51.252473Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-01-05T13:15:51.251902Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-01-05T13:16:02.480587Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-01-05T13:16:02.479534Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2026-01-05T13:15:51.252430Z&quot;}" data-execution_count="4">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb3" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>list_of_vowels <span class="op">=</span> [<span class="st">"a"</span>, <span class="st">"e"</span>, <span class="st">"i"</span>, <span class="st">"o"</span>, <span class="st">"u"</span>]</span>
@@ -406,7 +406,7 @@ window.Quarto = {
 </details>
 </div>
 <p>Let’s verify the code is working:</p>
-<div id="4e25954a-72e3-4327-a48b-1045c6a9da18" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-07-18T10:21:38.537758Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-18T10:21:38.537147Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-18T10:21:38.544575Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-18T10:21:38.543552Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-18T10:21:38.537711Z&quot;}" data-execution_count="5">
+<div id="4e25954a-72e3-4327-a48b-1045c6a9da18" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-01-05T13:16:03.773810Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-01-05T13:16:03.773286Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-01-05T13:16:03.781604Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-01-05T13:16:03.780422Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2026-01-05T13:16:03.773768Z&quot;}" data-execution_count="5">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb4" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> vowel <span class="kw">in</span> list_of_vowels:</span>
@@ -421,7 +421,7 @@ Tokens that contain letter u: U u ou ur ut us un ul ue um ub urn out turn our...
 </div>
 </div>
 <p>It is working. Let’s see how many tokens per vowel are there in this tokenizer:</p>
-<div id="f33dc0fe-5d04-4123-8591-88fe76582410" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-07-18T10:22:01.432898Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-18T10:22:01.431872Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-18T10:22:01.441067Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-18T10:22:01.439803Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-18T10:22:01.432845Z&quot;}" data-execution_count="6">
+<div id="f33dc0fe-5d04-4123-8591-88fe76582410" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-01-05T13:16:05.221104Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-01-05T13:16:05.220624Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-01-05T13:16:05.228988Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-01-05T13:16:05.227797Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2026-01-05T13:16:05.221063Z&quot;}" data-execution_count="6">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb6" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Total number of vocab tokens: </span><span class="sc">{</span>tokenizer<span class="sc">.</span>vocab_size<span class="sc">:,}</span><span class="ss">"</span>)</span>
@@ -440,7 +440,7 @@ There are 16,789 tokens that contain vowel 'u' or 11.07% of tokens</code></pre>
 <p>OK, so the letter ‘e’ is indeed a quite used vowel.</p>
 <p>We want to create a logits processor that will forbid all the tokens that contain the letter ‘e’.</p>
 <p>We first create a logits processor that will receive a list of forbidden tokens and that it will lower the raw scores of the forbiden tokens to minus infinite as follows:</p>
-<div id="ab9cc740-5212-4a37-a668-3275d5d4077a" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-07-18T10:22:28.707331Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-18T10:22:28.706390Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-18T10:22:28.715093Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-18T10:22:28.714083Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-18T10:22:28.707286Z&quot;}" data-execution_count="7">
+<div id="ab9cc740-5212-4a37-a668-3275d5d4077a" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-01-05T13:16:08.102220Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-01-05T13:16:08.101756Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-01-05T13:16:08.111074Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-01-05T13:16:08.109938Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2026-01-05T13:16:08.102179Z&quot;}" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb8" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> GeorgePerecLogitsProcessor(LogitsProcessor):</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, forbidden_tokens: List[<span class="bu">int</span>]):</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.forbidden_tokens <span class="op">=</span> forbidden_tokens</span>
@@ -457,7 +457,7 @@ There are 16,789 tokens that contain vowel 'u' or 11.07% of tokens</code></pre>
 <span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> scores_processed</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We can instantiate the logits processor by putting all the tokens that contain the letter ‘e’ as forbidden tokens:</p>
-<div id="3e6c25ea-b971-43b2-ab3f-96af9d2be45a" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-07-18T10:22:36.858608Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-18T10:22:36.858000Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-18T10:22:36.863641Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-18T10:22:36.862677Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-18T10:22:36.858566Z&quot;}" data-execution_count="8">
+<div id="3e6c25ea-b971-43b2-ab3f-96af9d2be45a" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-01-05T13:16:09.364244Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-01-05T13:16:09.363570Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-01-05T13:16:09.370086Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-01-05T13:16:09.368734Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2026-01-05T13:16:09.364199Z&quot;}" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb9" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>logits_processors <span class="op">=</span> [</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    GeorgePerecLogitsProcessor(</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>        forbidden_tokens<span class="op">=</span>tokens_per_vowel[<span class="st">"e"</span>],</span>
@@ -469,7 +469,7 @@ There are 16,789 tokens that contain vowel 'u' or 11.07% of tokens</code></pre>
 <p>Tell me a story about pirates and adventures</p>
 </blockquote>
 <p>Here is the language model’s response</p>
-<div id="8cd01d02-4eee-410d-b08c-8b65d2001b10" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-07-18T10:22:40.814700Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-18T10:22:40.813767Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-18T10:22:54.204691Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-18T10:22:54.203578Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-18T10:22:40.814657Z&quot;}" data-execution_count="9">
+<div id="8cd01d02-4eee-410d-b08c-8b65d2001b10" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-01-05T13:16:11.340859Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-01-05T13:16:11.340386Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-01-05T13:16:23.320574Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-01-05T13:16:23.319884Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2026-01-05T13:16:11.340817Z&quot;}" data-execution_count="9">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb10" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>user_input <span class="op">=</span> <span class="st">"Tell me a story about pirates and adventures"</span></span>
@@ -496,8 +496,8 @@ There are 16,789 tokens that contain vowel 'u' or 11.07% of tokens</code></pre>
 </div>
 <p>Perfect!</p>
 <p>Here is an app to talk to a language model like this one yourself (it is running on CPU, so it might be slow):</p>
-<div id="4843f695-7b07-4ed6-b4ec-dc4ff7430a5e" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-07-18T10:50:49.501880Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-07-18T10:50:49.501257Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-07-18T10:50:49.509858Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-07-18T10:50:49.508693Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2025-07-18T10:50:49.501834Z&quot;}" data-execution_count="12">
-<div class="cell-output cell-output-display" data-execution_count="12">
+<div id="4843f695-7b07-4ed6-b4ec-dc4ff7430a5e" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-01-05T13:16:28.676689Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-01-05T13:16:28.676175Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-01-05T13:16:28.685215Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-01-05T13:16:28.684164Z&quot;,&quot;shell.execute_reply.started&quot;:&quot;2026-01-05T13:16:28.676646Z&quot;}" data-execution_count="10">
+<div class="cell-output cell-output-display" data-execution_count="10">
 
         <iframe width="850" height="600" src="https://alonsosilva-georgesperecassistant.hf.space" frameborder="0" allowfullscreen=""></iframe>
         
